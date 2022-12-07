@@ -1,9 +1,9 @@
 import './style.css';
+import Seach from '../Search/index.js';
 function App() {
   return (
     <div className="App">
-
-      <h1>teste</h1>
+      <Seach/>
 
     </div>
   );
