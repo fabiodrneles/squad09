@@ -1,25 +1,35 @@
-import './style.css';
+import './Style.css';
 function Login(){
     return (
         <div className="container">
+
+            <div className='ListMain'>
+                <div className='header' >
+                    <p className='hastag'>hashtag<span className='Find'>finder</span></p>
+                    <div className='buttons'>
+                        <button className='buttonHome'>Home</button>
+                    </div>
+                </div>
+           </div>
+
+
             <div className="container-login">
                 <div className="wrap-login">
                     <form className="form-login">
-                        <spam> Login</spam>
+                        <spam className="text-login"> Login</spam>
 
                         <div className="Wrap-input">
-                            <input type="email"/>
-                            <span className="focus-input" data-placeholder="email"></span>
+                            <input className="input" type="email" placeholder="Usuario"/>
                         </div>
 
                         <div className="Wrap-input">
-                            <input type="password"/>
-                            <span className="focus-input" data-placeholder="password"></span>
+                            <input className="input" type="password" placeholder='senha'/>
                         </div>
 
-                        <div className="button-send">
-                            <button type="submit">Acessar</button>
+                        <div className="container-button">
+                            <button className="button-send">ACESSAR</button>
                         </div>
+                        
                     </form>
                 </div>
             </div>
