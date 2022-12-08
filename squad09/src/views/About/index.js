@@ -8,7 +8,7 @@ function About(){
       <div>
         <Header button={buttonName}/>
       </div>
-      <h1>Aqui será a About</h1> 
+      <h1>Aqui será About</h1> 
 
     </>
   )
