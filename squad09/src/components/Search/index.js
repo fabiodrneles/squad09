@@ -7,8 +7,8 @@ function Seach() {
                 <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
                     <div className='buttons'>
-                        <button className='buttonHome'>Home</button>
-                        <button className='buttonHeader'>sair</button>
+                        <button className='buttonHome'>HOME</button>
+                        <button className='buttonHeader'>SAIR</button>
                     </div>
 
                 </div>
