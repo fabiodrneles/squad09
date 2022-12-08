@@ -1,3 +1,4 @@
+
 /* Layout Properties */
 .ListMain {
     margin-left: 0px;
@@ -67,7 +68,7 @@
     flex-direction: column;
     margin-top: 0px;
     background: #18326B;
-    height: 758px;
+    height: 658px;
     border-radius: 14px;
 
 
@@ -127,7 +128,7 @@
     opacity: 1;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    height: 50px;
+    height: 80px;
 }
 
 .ListColumns {
@@ -135,6 +136,7 @@
     font-family: 'Rubik';
     padding-left: 34.1px;
     font-weight: 600;
+    justify-content: space-between;
 }
 
 .dateColumn {
@@ -144,7 +146,8 @@
 }
 .hourColumn{
     display: flex;
-    margin-right: 50px;
+    margin-right: 60px;
+    margin-left: 20px;
 }
 /* Listas das Hastags */
 ul {
