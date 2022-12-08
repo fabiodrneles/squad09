@@ -1,13 +1,11 @@
 import './style.css';
 import React from 'react';
-import NavBar from '../NavBar/index.js';
+import Footer from '../Footer/index'
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-
-
+      <Footer/>
     </div>
   );
 }
