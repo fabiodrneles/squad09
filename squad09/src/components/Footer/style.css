@@ -4,13 +4,16 @@
   }
   
   .footerDiv {
+      width: 100vw;
+      height: 202px;
+      top: 3947px;
+      left: 0px;
+
       background-color: #1e3e7b;
-      height: 140px;
-      width: 100%;
-      color: #1e3e7b;
       display: flex;
       justify-content: center;
       align-items: center;
+
     }
     
     .footerDiv p {

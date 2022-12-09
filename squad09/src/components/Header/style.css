@@ -7,7 +7,7 @@
 .caixaMaior  {
     top: 0px;
     left: 0px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     max-height: 100px;
     min-height: 82px;
@@ -34,6 +34,16 @@
 
 }
 
+button {
+    margin-right: 36px;
+    font: normal normal bold 17px/13px Rubik;
+    letter-spacing: 2.55px;
+    color: #0B1741;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
 .btnLeft {
     top: 36px;
     left: 1484px;
@@ -52,12 +62,19 @@
     left: 1484px;
     width: 170px;
     height: 49px;
-    background: #1E3E7B 0% 0% no-repeat padding-box;
+    background: #72EFDB 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #5538EE29;
     border-radius: 25px;
     opacity: 1;
     margin-right: 0;
     cursor: pointer;
+
+}
+
+button:active{
+    background: #1E3E7B 0% 0% no-repeat padding-box;
+    
+
 }
 
 h2 {
@@ -83,11 +100,4 @@ span {
     color: #FFFFFF;
 }
 
-button {
-    margin-right: 36px;
-    font: normal normal bold 17px/13px Rubik;
-    letter-spacing: 2.55px;
-    color: #0B1741;
-    text-transform: uppercase;
-    opacity: 1;
-}
+
