@@ -2,3 +2,9 @@
     padding:0;
     margin:0;
 }
+
+body{
+    background-image: url(../assets/hero-bg.jpg);
+    background-position: 60%;
+   
+}
