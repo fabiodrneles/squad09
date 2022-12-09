@@ -8,3 +8,7 @@ body{
     background-position: 60%;
    
 }
+
+button.btnName{
+    background-color: red;
+}
