@@ -1,14 +1,22 @@
-import Logo from '../../assets/logo.svg'
-import './style.css';
+import React from "react";
+import "./style.css";
 
-function Header(props){
-  return(
-    <div className='header'>
-      <img className='logo' src= { Logo } alt= "logo"/>
-      {
-        props.button.map( (item,index) => <button className='btn'  key={index}>{item}</button> )
-      }
-    </div>
-  )
+function Top(){
+    return (
+        <div ClassName="Header">
+
+            <div className="caixaMaior">
+                <div>
+                    <h2>hashtag<span>finder</span></h2>
+                </div>
+
+                <div className="botoes">
+                    <button className="btnLeft">Sobre</button>
+                    <button className="btnRight">Login</button>
+                </div>
+            </div>
+        </div>
+    );
 }
-export default Header;
+
+export default Top;

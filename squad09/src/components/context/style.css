@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.TESTO {
+    width: 100%;
+    height: 817px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+}
