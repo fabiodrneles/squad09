@@ -3,18 +3,29 @@ import Header from "../../components/Header";
 
 
 function Home(){
-  const [btnName, setBtnName] = useState(['Pesquisar', 'Login'])
+  const [btnName, setBtnName] = useState(['Sobre', 'Login'])
 
   return(
     <>
      <>
-      <div>
-        <Header button={btnName}/>
-      </div>
-      <h1>Aqui será a Home</h1> 
+        <div className="botoes">
+          <Header button={btnName}/>
+        </div>
 
-    </>
-    Aqui será Home
+        <div className="conteudo">
+
+          <h1>Aqui será a Home</h1> 
+          <h2>Aqui será a home</h2>
+          <h2>Aqui será a home</h2>
+          <h2>Aqui será a home</h2>
+          <h2>Aqui será a home</h2>
+          <h2>Aqui será a home</h2>
+          <h2>Aqui será a home</h2>
+          <h2>Aqui será a home</h2>
+
+        </div>
+
+      </>
     </>
   )
 }
