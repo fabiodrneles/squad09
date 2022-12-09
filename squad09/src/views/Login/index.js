@@ -1,17 +1,16 @@
 import './Style.css';
+import React,{useState} from "react";
+import Header from "../../components/Header";
+
 function Login(){
+    const [btnName, setBtnName] = useState(['Home'])
+
     return (
         <div className="container">
 
-            <div className='ListMain'>
-                <div className='header' >
-                    <p className='hastag'>hashtag<span className='Find'>finder</span></p>
-                    <div className='buttons'>
-                        <button className='buttonHome'>Home</button>
-                    </div>
-                </div>
-           </div>
-
+        <div>
+            <Header button={btnName}/>
+        </div>
 
             <div className="container-login">
                 <div className="wrap-login">

@@ -1,0 +1,27 @@
+.header{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+
+  background-color: #0A1744;
+}
+
+.button {
+  top: 36px;
+  height: 25px;
+  width: 100px;
+  margin-top: 22px;
+  margin-right: 30px;
+
+  background: #72EFDB 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  opacity: 1;
+  border: none;
+}
+
+.Logo{
+  margin-top: 15px;
+  margin-left: 30px;
+  height: 50%;
+}

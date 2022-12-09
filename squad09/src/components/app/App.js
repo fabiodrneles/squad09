@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Login from '../Login/index.js';
+import Login from '../../views/Login/index';
 
 
 function App() {
