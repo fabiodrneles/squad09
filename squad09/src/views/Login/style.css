@@ -9,18 +9,6 @@ body{
     background-position: 60%;
    
 }
-.ListMain {
-    margin-left: 0px;
-    margin-top: 0px;
-    width: 100%;
-    flex-direction: column;
-    background-color: rgba(4, 4, 133, 0.868);
-    background-image: linear-gradient(to bottom right, #132B66, #001D5A);
-
-    opacity: 0.82;
-
-}
-
 
 
 
@@ -53,7 +41,7 @@ body{
     
     overflow: hidden;
     padding: 85px 55px 105px 55px;
-    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.29);
 }
 
 .text-login{
@@ -102,3 +90,29 @@ body{
     height: 49px;
     border-radius: 34px;
 }
+
+    @media screen and (max-width: 415px) {
+
+        body{
+            background-image: url(../../assets/mobile-hero-bg.jpg);
+            background-position: 60%;
+        }
+
+        .wrap-login{
+            padding: 75px 40px 85px 40px;
+        
+        }
+        
+        .button-send{
+            width: 150px;
+            height: 40px;
+        }
+        
+    }
+
+
+
+
+
+
+    
