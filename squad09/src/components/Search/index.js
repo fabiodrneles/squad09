@@ -3,7 +3,7 @@ import './style.css';
 function Seach() {
     return (
         <header>
-            <div className='ListMain'>
+            <div className='ListMain ,mobile'>
                 <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
                     <div className='buttons'>
