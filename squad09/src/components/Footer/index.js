@@ -1,13 +1,14 @@
 import React from "react";
-import './style.css';
+import "./style.css";
 
-function Footer() {
-    return(
-        <div>
-
-        </div>
-
-    )
-}
+const Footer = () => {
+  return (
+    <>
+      <footer className="footerDiv">
+        <p>Newtab Academy 2022</p>
+      </footer>
+    </>
+  );
+};
 
 export default Footer;
