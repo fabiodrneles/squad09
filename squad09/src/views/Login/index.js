@@ -1,16 +1,18 @@
 import './Style.css';
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Header from "../../components/Header";
+import iconHome from "../../assets/icon-home.svg"
 
-function Login(){
+function Login() {
     const [btnName, setBtnName] = useState(['Home'])
 
     return (
         <div className="container">
 
-        <div>
-            <Header button={btnName}/>
-        </div>
+            <div>
+                
+                <Header button={btnName} />
+            </div>
 
             <div className="container-login">
                 <div className="wrap-login">
@@ -18,21 +20,21 @@ function Login(){
                         <spam className="text-login"> Login</spam>
 
                         <div className="Wrap-input">
-                            <input className="input" type="email" placeholder="Usuario"/>
+                            <input className="input" type="email" placeholder="Usuario" />
                         </div>
 
                         <div className="Wrap-input">
-                            <input className="input" type="password" placeholder='senha'/>
+                            <input className="input" type="password" placeholder='senha' />
                         </div>
 
                         <div className="container-button">
                             <button className="button-send">ACESSAR</button>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>
-        </div>    
+        </div>
     )
 
 }

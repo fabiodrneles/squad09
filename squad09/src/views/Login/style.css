@@ -1,24 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
 }
-body{
+
+body {
     background-image: url(../../assets/hero-bg.jpg);
     background-position: 60%;
-   
 }
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
 
-
-.container{
+.container {
     width: 100%;
     margin: 0 auto;
 
 }
 
-.container-login{
+.container-login {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -28,39 +28,41 @@ body{
     padding: 70px;
 }
 
-.form-login{
+.form-login {
     width: 100%;
 }
 
-.wrap-login{
+.wrap-login {
     width: 390px;
     background-color: #0c0d2088;
     border-radius: 10px;
-    
-    
-    
+
+
+
     overflow: hidden;
     padding: 85px 55px 105px 55px;
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.29);
 }
 
-.text-login{
+.text-login {
     display: block;
     font-size: 30px;
     color: #72EFDB;
     margin-bottom: 40px;
     line-height: 1.2;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
-.Wrap-input{
+.Wrap-input {
     width: 100%;
-    position:relative;
+    position: relative;
     border-bottom: 2px solid #e9e9f029;
-    margin-bottom: 37px ;
+    margin-bottom: 37px;
 
 }
-.input{
+
+.input {
     font-size: 15px;
     color: #fff;
     line-height: 1.2;
@@ -73,46 +75,41 @@ body{
     padding: 0 5px;
 }
 
-.input:focus{
+.input:focus {
     outline: 0;
 }
 
 
-.container-button{
+.container-button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.button-send{
-    background: #72EFDB ;
+.button-send {
+    background: #72EFDB;
     width: 205px;
     height: 49px;
     border-radius: 34px;
 }
 
-    @media screen and (max-width: 415px) {
 
-        body{
-            background-image: url(../../assets/mobile-hero-bg.jpg);
-            background-position: 60%;
-        }
 
-        .wrap-login{
-            padding: 75px 40px 85px 40px;
-        
-        }
-        
-        .button-send{
-            width: 150px;
-            height: 40px;
-        }
-        
+@media screen and (max-width: 415px) {
+
+    body {
+        background-image: url(../../assets/mobile-hero-bg.jpg);
+        background-position: 60%;
     }
 
+    .wrap-login {
+        padding: 75px 30px 85px 30px;
 
+    }
 
+    .button-send {
+        width: 140px;
+        height: 45px;
+    }
 
-
-
-    
+}

@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   height: 70px;
   width: 100%;
@@ -17,23 +17,33 @@
   border-radius: 25px;
   opacity: 1;
   border: none;
+  cursor: pointer;
 }
-
-.Logo{
-  margin-top: 15px;
+.Title-header h2 { 
+  margin-top: 20px;
   margin-left: 30px;
   height: 50%;
+
+  font-size: 27px;
+  font-weight: 400;
+  opacity: 1;
+  color: #ffffff;
+  letter-spacing: 0px;
+  
 }
 
+.Title-header span {
+  font: normal normal bold 28px/29px Rubik;
+}
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 450px) {
 
-  .Logo{
+  .Title-header h2 {
     margin-top: 18px;
     margin-left: 18px;
-    height: 42%;
   }
-  .button{
+
+  .button {
     width: 75px;
     height: 28px;
     margin-right: 14px;
