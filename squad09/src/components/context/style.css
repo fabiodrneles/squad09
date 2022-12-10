@@ -4,13 +4,13 @@
 }
 
 
-.TESTO {
+.center {
+    display: flex;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
     background: url(../../assets/hero-bg.jpg) no-repeat;
     background-size: cover;
 

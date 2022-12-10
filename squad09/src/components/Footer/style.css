@@ -19,6 +19,7 @@
     .footerDiv p {
       color: #fff;
       font-size: 18px;
+      font: normal normal normal 25px/19px Rubik;
     }
     
     @media (max-width: 768px) {

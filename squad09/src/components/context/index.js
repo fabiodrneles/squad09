@@ -1,11 +1,13 @@
+import SearchBar from "../SearchBar";
 import "./style.css";
 
 
 
 function Context() {
     return(
-        <h2 className="TESTO">conteudo</h2>
-
+        <div className="center">
+            <SearchBar/>
+        </div>
     );
 }
 
