@@ -1,0 +1,76 @@
+.containerAbout{
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--collor-white);
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+}
+.aboutProject{
+  width: 50%;
+  line-height: 200%;
+}
+.aboutProjectTitle{
+  font-size: larger;
+}
+.aboutIlustration{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+}
+.IlustrationImage{
+  width: 100%;
+}
+.aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutTitle{
+  width: 82%;
+}
+.aboutUsBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutBox{
+  max-width: 15%;
+  display: flex;
+  font-size: small;
+  flex-direction: column;
+  border: 1px solid #FFFFFF24;
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.aboutBoxImage{
+  display: flex;
+  justify-content: center;
+} 
+.aboutImage{
+  display: flex;
+  width: 65%;
+  border-radius: 50%;
+}
+.aboutName{
+  color: var(--collor-light);
+}
+.aboutBoxIcon{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.iconImage{
+  display: flex;
+  margin: 4%;
+}
