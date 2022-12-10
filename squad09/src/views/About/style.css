@@ -16,32 +16,34 @@
 }
 .headerBtn{
   display: flex;
-  width: 40%;
+  width: 30%;
   justify-content: end;
 }
 .btnAbout{
   background-color: var(--collor-light);
-  width: 25%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 25%;
+  margin-right: 5%;
   border: none;
 }
 .btnLogin{
   background-color:var(--collor-card-about);
   color: var(--collor-white);
-  width: 25%;
-  margin-left: 2%;
+  width: 40%;
+  display: flex;
   justify-content: center;
   align-items: center;
-
+  border-radius: 25%;
+  border: none;
 }
 .btnImgAbout{
-  display: flex;
-  margin-right: 10% ;
+  margin-right: 8%;
 }
 .btnImgLogin{
-  margin-right: 10%;
+  margin-right: 8%;
 }
 .about{
   display: flex;
@@ -56,6 +58,9 @@
 }
 .aboutProjectTitle{
   font-size: larger;
+}
+.projectText{
+  text-align: justify;
 }
 .aboutIlustration{
   width: 40%;
@@ -103,6 +108,9 @@
   width: 65%;
   border-radius: 50%;
 }
+.aboutText{
+  text-align: center;
+}
 .aboutName{
   color: var(--collor-light);
 }
@@ -114,4 +122,7 @@
 .iconImage{
   display: flex;
   margin: 4%;
+}
+
+@media screen and (max-width:768px) {
 }

@@ -3,6 +3,7 @@ import './style.css';
 import Header from "../../components/Header";
 import IconIlustration from '../../assets/about-ilustration.svg';
 import IconMarcia from '../../assets/marcia.jpeg';
+import IconDaniel from '../../assets/daniel.jpeg';
 import IconGithub from '../../assets/icon-github.svg';
 import IconEnvelope from '../../assets/icon-envelope.svg';
 import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
@@ -17,22 +18,26 @@ function About(){
     {
       name: 'Daniel Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: IconMarcia
+      img: IconDaniel,
+      email: 'nogueira.dan07@gmail.com'
     },
     {
       name: 'Fabio Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: IconMarcia
+      img: IconMarcia,
+      email: 'bmg.olivier@gmail.com'
     },
     {
       name: 'Leidy Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: IconMarcia
+      img: IconMarcia,
+      email:'bmg.olivier@gmail.com'
     },
     {
       name: 'Marcia Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: IconMarcia
+      img: IconMarcia,
+      email: 'bmg.olivier@gmail.com'
     },
   ]
   return(
@@ -54,12 +59,14 @@ function About(){
             </div>
             <div className="projectText">
               <p>
-              Lorem ipsum dolor sit amet. Sit minus laboriosam eos assumenda nesciunt cum 
-              tempore quod aut Quis culpa et officia voluptatibus aut vero mollitia non 
-              perspiciatis numquam. Nam maiores eaque aut saepe repellendus a ipsa dicta 
-              aut possimus quia aut quae sint in quisquam magnam ab repudiandae voluptas. 
-              Id molestias omnis sit iste voluptates id expedita eveniet et voluptas suscipit 
-              cum nisi nulla.
+                Certamente, você já encontrou a palavra engajamento em diferentes contextos, 
+                e nós alunos da NewTab Academy estamos engajados em te proporcionar ferramentas 
+                que otimizam suas buscas de maneira assertiva.
+              </p>
+              <p>
+                Aqui no hashtagfinder, você acessa de forma rápida e simples as hashs mais comentadas do Twitter, 
+                garantindo assim maior interação em suas postagens, além de monitorar o crescimento de suas próprias 
+                hashes personalizadas e te deixar por dentro das maiores novidades, e tudo isso de forma gratuita.
               </p>
             </div>
           </div>
@@ -77,12 +84,8 @@ function About(){
                 <div className="aboutBoxImage">
                   <img src={item.img} alt={item.name} className="aboutImage"/>
                 </div>
-                <div className="aboutName">
-                  <h2>{item.name}</h2> 
-                </div>
-                <div>
-                  <p>{item.about}</p>
-                </div>
+                <div className="aboutName"><h2>{item.name}</h2></div>
+                <div  className="aboutText"><p>{item.about}</p></div>
                 <div className="aboutBoxIcon">
                   <img src= { IconGithub } alt= "github" className="iconImage"/>
                   <img src= { IconEnvelope } alt= "envelope" className="iconImage"/>
