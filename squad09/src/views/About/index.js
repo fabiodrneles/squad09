@@ -1,40 +1,52 @@
-import React, { useState } from "react";
+import React from "react";
 import './style.css';
 import Header from "../../components/Header";
-import Ilustration from '../../assets/about-ilustration.svg';
-import Marcia from '../../assets/marcia.jpeg';
-import Github from '../../assets/icon-github.svg';
-import Envelope from '../../assets/icon-envelope.svg';
-import Linkedin from '../../assets/icon-awesome-linkedin.svg';
+import IconIlustration from '../../assets/about-ilustration.svg';
+import IconMarcia from '../../assets/marcia.jpeg';
+import IconGithub from '../../assets/icon-github.svg';
+import IconEnvelope from '../../assets/icon-envelope.svg';
+import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
+import IconLogo from '../../assets/logo.svg'
+import IconAbout from '../../assets/icon-info-circle.svg'
+import IconLogin from '../../assets/icon-user-alt.svg'
+
 
 function About(){
-  const [buttonName, setButtonName] = useState(['Sobre', 'Login'])
-  const [aboutUs, setAboutUs] = useState([
+  const buttonName= ['SOBRE', 'LOGIN']
+  const aboutUs= [
     {
       name: 'Daniel Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: Marcia
+      img: IconMarcia
     },
     {
       name: 'Fabio Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: Marcia
+      img: IconMarcia
     },
     {
       name: 'Leidy Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: Marcia
+      img: IconMarcia
     },
     {
       name: 'Marcia Oliveira',
       about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: Marcia
+      img: IconMarcia
     },
-  ])
+  ]
   return(
     <>
-      <div className="containerAbout">
-        <Header button={buttonName}/>
+    <div className="containerAbout">
+      <div className="headerAbout">
+        <div className="headerImg">
+          <img src= { IconLogo } alt= "logo" className="imgLogo"/>
+        </div>
+        <div className="headerBtn">
+          <button className="btnAbout"><img src={IconAbout} alt={IconAbout} className="btnImgAbout"/>SOBRE</button>
+          <button className="btnLogin"><img src={IconLogin} alt={IconLogin} className="btnImgLogin"/>LOGIN</button>
+        </div>
+      </div>
         <div className="about">
           <div className="aboutProject">
             <div className="aboutProjectTitle">
@@ -52,7 +64,7 @@ function About(){
             </div>
           </div>
           <div className="aboutIlustration">
-            <img src= { Ilustration } alt= "ilustração" className="IlustrationImage"/>
+            <img src= { IconIlustration } alt= "ilustração" className="IlustrationImage"/>
           </div>
         </div>
         <div className="aboutUs">
@@ -72,9 +84,9 @@ function About(){
                   <p>{item.about}</p>
                 </div>
                 <div className="aboutBoxIcon">
-                  <img src= { Github } alt= "github" className="iconImage"/>
-                  <img src= { Envelope } alt= "envelope" className="iconImage"/>
-                  <img src= { Linkedin } alt= "github" className="iconImage"/>
+                  <img src= { IconGithub } alt= "github" className="iconImage"/>
+                  <img src= { IconEnvelope } alt= "envelope" className="iconImage"/>
+                  <img src= { IconLinkedin } alt= "github" className="iconImage"/>
                 </div>
               </div>
             )}

@@ -5,6 +5,44 @@
   flex-direction: column;
   color: var(--collor-white);
 }
+.headerAbout{
+  display: flex;
+  background-color: var(--collor-dark);
+  justify-content: space-between;
+  padding: 0.5% 2% 0.5% 2% ;
+}
+.headerImg{
+  display: flex;
+}
+.headerBtn{
+  display: flex;
+  width: 40%;
+  justify-content: end;
+}
+.btnAbout{
+  background-color: var(--collor-light);
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.btnLogin{
+  background-color:var(--collor-card-about);
+  color: var(--collor-white);
+  width: 25%;
+  margin-left: 2%;
+  justify-content: center;
+  align-items: center;
+
+}
+.btnImgAbout{
+  display: flex;
+  margin-right: 10% ;
+}
+.btnImgLogin{
+  margin-right: 10%;
+}
 .about{
   display: flex;
   justify-content: space-between;
@@ -33,9 +71,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3%;
 }
 .aboutTitle{
   width: 82%;
+  margin-bottom: 2%;
 }
 .aboutUsBox{
   display: flex;
@@ -48,6 +88,7 @@
   font-size: small;
   flex-direction: column;
   border: 1px solid #FFFFFF24;
+  border-radius: 5px;
   margin: 1%;
   justify-content: center;
   align-items: center;
