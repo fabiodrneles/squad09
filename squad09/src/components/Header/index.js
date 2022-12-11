@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import { IoInformationCircleSharp } from 'react-icons/io5';
+import { BsFillPersonFill } from 'react-icons/bs';
 
 function Top(){
     return (
@@ -11,8 +13,14 @@ function Top(){
                 </div>
 
                 <div className="botoes">
-                    <button className="btnLeft">Sobre</button>
-                    <button className="btnRight">Login</button>
+                    <button className="btnLeft">
+                    <IoInformationCircleSharp/>
+                      Sobre
+                    </button>
+                    <button className="btnRight">
+                    <BsFillPersonFill/>
+                      Login
+                    </button>
                 </div>
             </div>
         </div>
