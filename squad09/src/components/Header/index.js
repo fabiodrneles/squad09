@@ -1,12 +1,18 @@
-import Logo from '../../assets/logo.svg'
 import './style.css';
 
-function Header(props){
-  return(
+function Header(props) {
+  return (
     <div className='header'>
-      <img src= { Logo } alt= "logo"/>
+      <div className="Title-header">
+        
+          <h2>
+            hashtag<span>finder</span>
+          </h2>
+          
+      </div>
+  
       {
-        props.button.map( (item,index) => <button key={index}>{item}</button> )
+        props.button.map((item, index) => <button className="button" key={index}>{item}</button>)
       }
     </div>
   )
