@@ -1,8 +1,8 @@
 body {
-    background-image: url(../assets/about-hero-bg.jpg);
+    background-image: url(../../assets/about-hero-bg.jpg);
     background-position: 60%;
 
-}
+} 
 
 /* Layout Properties */
 .ListMain {
@@ -331,11 +331,11 @@ ul {
 /* Para modelos tablets */
 
 @media screen and (max-width: 768px) {
-    body {
+    /* body {
         background-image: url(../assets/about-hero-bg.jpg);
       
 
-    }
+    } */
     .ListTable {
         display: flex;
         margin-left: 183px;

@@ -1,6 +1,8 @@
+
 import './style.css';
 
-function Seach() {
+function Seac() {
+    
     return (
         <header>
             <div className='ListMain ,mobile'>
@@ -9,9 +11,10 @@ function Seach() {
                     <div className='buttons'>
                         <button className='buttonHome'>HOME</button>
                         <button className='buttonHeader'>SAIR</button>
+                        </div>
                     </div>
 
-                </div>
+               
 
                 <div className='ListTitle'>Buscas Realizadas</div>
                 <div className='ListTable'>
@@ -91,4 +94,4 @@ function Seach() {
         </header>
     );
 };
-export default Seach;
+export default Seac;
