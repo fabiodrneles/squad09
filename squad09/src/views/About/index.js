@@ -4,6 +4,8 @@ import Header from "../../components/Header";
 import IconIlustration from '../../assets/about-ilustration.svg';
 import IconMarcia from '../../assets/marcia.jpeg';
 import IconDaniel from '../../assets/daniel.jpeg';
+import IconFabio from '../../assets/fabio.jpeg';
+import IconLeidy from '../../assets/leidy.jpeg';
 import IconGithub from '../../assets/icon-github.svg';
 import IconEnvelope from '../../assets/icon-envelope.svg';
 import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
@@ -17,27 +19,36 @@ function About(){
   const aboutUs= [
     {
       name: 'Daniel Oliveira',
-      about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
+      about: 'Desenvolvedor Front End HTML5 | CSS | JAVASCRIPT | REACT.JS ',
       img: IconDaniel,
-      email: 'nogueira.dan07@gmail.com'
+      email: 'nogueira.dan07@gmail.com',
+      github: 'https://github.com/DanielNogueiraOliveira',
+      linkedin: 'https://www.linkedin.com/in/daniel-nogueira-6ba2711b0/'
+    
     },
     {
-      name: 'Fabio Oliveira',
-      about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: IconMarcia,
-      email: 'bmg.olivier@gmail.com'
+      name: 'Fabio Dorneles',
+      about: 'Desenvolvedor Full Stack REACT.JS | SPRING | ANDROID | JAVA | z/OS | COBOL ',
+      img: IconFabio,
+      email: 'fabiodrneles@gmail.com',
+      github: 'https://github.com/fabiodrneles',
+      linkedin: 'https://www.linkedin.com/in/fabiodrneles/',
     },
     {
-      name: 'Leidy Oliveira',
-      about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
-      img: IconMarcia,
-      email:'bmg.olivier@gmail.com'
+      name: 'Leidy Olinto',
+      about: 'Desenvolvedora Front End   HTML | GIT | CSS | JAVASCRIPT| REACT.JS ',
+      img: IconLeidy,
+      email:'suverleide.olinto@gmail.com',
+      github: 'https://github.com/LeidyOlinto',
+      linkedin: 'https://www.linkedin.com/in/leidy-olinto-356b9391/'
     },
     {
       name: 'Marcia Oliveira',
-      about: 'fuibbbjeijfpodbeihtvdoyw  CBO IWHOICHENWPCHJEP  JCPO  JCPI  WJECPOJE  PO',
+      about: 'Desenvolvedora Front End HTML | CSS | JAVASCRIPT | VUE.JS | REACT.JS',
       img: IconMarcia,
-      email: 'bmg.olivier@gmail.com'
+      email: 'bmg.olivier@gmail.com',
+      github: 'https://github.com/marciadeoliveira',
+      linkedin: 'https://www.linkedin.com/in/marcia-b-oliveira/'
     },
   ]
   return(
@@ -45,7 +56,7 @@ function About(){
     <div className="containerAbout">
       <div className="headerAbout">
         <div className="headerImg">
-          <img src= { IconLogo } alt= "logo" className="imgLogo"/>
+          <img src= {IconLogo} alt= "logo" className="imgLogo"/>
         </div>
         <div className="headerBtn">
           <button className="btnAbout"><img src={IconAbout} alt={IconAbout} className="btnImgAbout"/>SOBRE</button>
@@ -61,7 +72,7 @@ function About(){
               <p>
                 Certamente, você já encontrou a palavra engajamento em diferentes contextos, 
                 e nós alunos da NewTab Academy estamos engajados em te proporcionar ferramentas 
-                que otimizam suas buscas de maneira assertiva.
+                que otimizem suas buscas de maneira assertiva.
               </p>
               <p>
                 Aqui no hashtagfinder, você acessa de forma rápida e simples as hashs mais comentadas do Twitter, 
@@ -71,7 +82,7 @@ function About(){
             </div>
           </div>
           <div className="aboutIlustration">
-            <img src= { IconIlustration } alt= "ilustração" className="IlustrationImage"/>
+            <img src= {IconIlustration} alt= "ilustração" className="IlustrationImage"/>
           </div>
         </div>
         <div className="aboutUs">
@@ -87,9 +98,9 @@ function About(){
                 <div className="aboutName"><h2>{item.name}</h2></div>
                 <div  className="aboutText"><p>{item.about}</p></div>
                 <div className="aboutBoxIcon">
-                  <img src= { IconGithub } alt= "github" className="iconImage"/>
-                  <img src= { IconEnvelope } alt= "envelope" className="iconImage"/>
-                  <img src= { IconLinkedin } alt= "github" className="iconImage"/>
+                  <img src= {IconGithub} alt= "github" className="iconImage"/>
+                  <img src= {IconEnvelope} alt= "envelope" className="iconImage"/>
+                  <img src= {IconLinkedin} alt= "linkedin" className="iconImage"/>
                 </div>
               </div>
             )}
