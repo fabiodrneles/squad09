@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,6 @@ body {
     background-image: url(../../assets/hero-bg.jpg);
     background-position: 60%;
 }
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
 
 .container {
@@ -91,6 +92,7 @@ body {
     width: 205px;
     height: 49px;
     border-radius: 34px;
+    cursor: pointer;
 }
 
 

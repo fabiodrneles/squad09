@@ -8,8 +8,8 @@
 }
 
 .button {
-  height: 25px;
-  width: 100px;
+  height: 30px;
+  width: 95px;
   margin-top: 22px;
   margin-right: 30px;
 
@@ -31,6 +31,9 @@
   letter-spacing: 0px;
   
 }
+.btnImgHome{
+  margin-right: 8%;
+}
 
 .Title-header span {
   font: normal normal bold 28px/29px Rubik;
@@ -44,8 +47,8 @@
   }
 
   .button {
-    width: 75px;
-    height: 28px;
+    width: 80px;
+    height: 30px;
     margin-right: 14px;
     margin-top: 20px;
   }
