@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 #divBusca{
     top: 729px;
     left: 460px;
@@ -12,7 +13,7 @@
     opacity: 1;
   }
   
-  #txtBusca{
+  #txtBusca {
     top: 759px;
     left: 587px;
     width: 197px;
@@ -21,7 +22,7 @@
 
     padding-top: 0px;
     margin-top: 30px;
-    margin-left: 127px;
+    margin-left: 150px;
     background-color:transparent;
     border:none;
     color: #8D9DA2;
@@ -31,6 +32,12 @@
     opacity: 0.57;
   }
 
-  FiSearch {
-    margin-left: 35px;
+  .FiSearch {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 60.68px;
+    margin-bottom: 50.17px;
+    opacity: 1;
+    font-size: 50px;
+    color: #72EFDB;
   }

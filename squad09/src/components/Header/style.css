@@ -45,6 +45,9 @@ button {
 
 
 .btnLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 36px;
     left: 1484px;
     width: 170px;
@@ -58,6 +61,9 @@ button {
 }
 
 .btnRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 36px;
     left: 1484px;
     width: 170px;
@@ -101,12 +107,6 @@ span {
 }
 
 
-.IoInformationCircleSharp {
-  margin-right: 14.23px;
-  margin-top: 19px;
-
-}
-
-path {
-  margin-right: 14.23px;
+.info, .person{
+  margin-right: 14px;
 }

@@ -14,12 +14,16 @@ function Top(){
 
                 <div className="botoes">
                     <button className="btnLeft">
-                    <IoInformationCircleSharp/>
-                      Sobre
+                    <div className="info">
+                      <IoInformationCircleSharp/>
+                    </div>
+                      <p>Sobre</p>
                     </button>
                     <button className="btnRight">
-                    <BsFillPersonFill/>
-                      Login
+                    <div className="person">
+                      <BsFillPersonFill/>
+                    </div>
+                      <p>Login</p>
                     </button>
                 </div>
             </div>
