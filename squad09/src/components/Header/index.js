@@ -12,7 +12,10 @@ function Header(props) {
       </div>
   
       {
-        props.button.map((item, index) => <button className="button" key={index}>{item}</button>)
+        props.button.map((item, index) => 
+        <button className="button" key={index}>
+          {item}
+        </button>)
       }
     </div>
   )
