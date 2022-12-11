@@ -1,6 +1,6 @@
 import './style.css';
 
-function Seach() {
+function SeachComponent() {
     return (
         <header>
             <div className='ListMain ,mobile'>
@@ -91,4 +91,4 @@ function Seach() {
         </header>
     );
 };
-export default Seach;
+export default SeachComponent;

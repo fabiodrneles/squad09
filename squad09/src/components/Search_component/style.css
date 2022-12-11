@@ -1,5 +1,5 @@
 body {
-    background-image: url(../assets/about-hero-bg.jpg);
+     background-image: url(../../assets/about-hero-bg.jpg); 
     background-position: 60%;
 
 }
@@ -332,7 +332,7 @@ ul {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url(../assets/about-hero-bg.jpg);
+        background-image: url(../../assets/about-hero-bg.jpg);
       
 
     }

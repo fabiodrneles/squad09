@@ -1,9 +1,10 @@
 import React from "react";
 
+import SeachComponent from "../../components/Search_component";
 function Search(){
   return(
     <>
-    Aqui será a Search
+    <SeachComponent/>
     </>
   )
 }
