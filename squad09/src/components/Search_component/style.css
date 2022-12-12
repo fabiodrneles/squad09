@@ -74,6 +74,19 @@ body {
 
 
 }
+.botoes {
+    display: flex;
+    margin-right: 49px;
+    
+
+}
+
+.iconeHome{
+    display: contents;
+}
+.iconeOff{
+    display: contents;
+}
 
 .buttonHome {
     top: 36px;

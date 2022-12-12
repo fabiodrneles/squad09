@@ -1,5 +1,9 @@
+import React from 'react';
 import './style.css';
-import { ImHome} from 'react-icons';
+import { FaHome } from 'react-icons/fa';
+import { CgLogOff } from 'react-icons/cg';
+
+
 
 function SeachComponent() {
     return (
@@ -7,9 +11,19 @@ function SeachComponent() {
             <div className='ListMain ,mobile'>
                 <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
+
+
                     <div className='buttons'>
-                        <button className='buttonHome'> {}HOME</button>
-                        <button className='buttonHeader'>SAIR</button>
+
+                        <button className='buttonHome'>
+                            <div className='iconeHome'>
+                                <FaHome />
+                            </div>  HOME
+                        </button>
+                        <button className='buttonHeader'>
+                            <div className='iconeOff'>
+                                <CgLogOff />
+                            </div>  SAIR</button>
                     </div>
 
                 </div>
@@ -30,7 +44,7 @@ function SeachComponent() {
                             <li className='hourColumns'>09:35</li>
                         </ul>
                         <hr className='Line'></hr>
-                        
+
                         <ul className='ListHastags'>
                             <li className='ListMarcadores'>#hastagname</li>
                             <li className='dateColumns'>25/02</li>
@@ -85,7 +99,7 @@ function SeachComponent() {
                             <li className='hourColumns'>09:35</li>
                         </ul>
                         <hr className='Line'></hr>
-                        
+
                     </container>
 
                 </div>
