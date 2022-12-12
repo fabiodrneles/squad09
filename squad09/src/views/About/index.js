@@ -28,7 +28,7 @@ function About(){
     },
     {
       name: 'Fabio Dorneles',
-      about: 'Desenvolvedor Full Stack REACT.JS | SPRING | ANDROID | JAVA | z/OS | COBOL ',
+      about: 'Desenvolvedor Full Stack REACT.JS | SPRING | ANDROID | JAVA | COBOL ',
       img: IconFabio,
       email: 'fabiodrneles@gmail.com',
       github: 'https://github.com/fabiodrneles',
@@ -63,50 +63,53 @@ function About(){
           <button className="btnLogin"><img src={IconLogin} alt={IconLogin} className="btnImgLogin"/>LOGIN</button>
         </div>
       </div>
-        <div className="about">
-          <div className="aboutProject">
-            <div className="aboutProjectTitle">
-              <h1>Sobre o projeto</h1>
-            </div>
-            <div className="projectText">
-              <p>
-                Certamente, você já encontrou a palavra engajamento em diferentes contextos, 
-                e nós alunos da NewTab Academy estamos engajados em te proporcionar ferramentas 
-                que otimizem suas buscas de maneira assertiva.
-              </p>
-              <p>
-                Aqui no hashtagfinder, você acessa de forma rápida e simples as hashs mais comentadas do Twitter, 
-                garantindo assim maior interação em suas postagens, além de monitorar o crescimento de suas próprias 
-                hashes personalizadas e te deixar por dentro das maiores novidades, e tudo isso de forma gratuita.
-              </p>
-            </div>
+      <div className="about">
+        <div className="aboutProject">
+          <div className="aboutProjectTitle">
+            <h1>Sobre o projeto</h1>
           </div>
-          <div className="aboutIlustration">
-            <img src= {IconIlustration} alt= "ilustração" className="IlustrationImage"/>
+          <div className="projectText">
+            <p>
+              Certamente, você já encontrou a palavra engajamento em diferentes contextos, 
+              e nós alunos da NewTab Academy estamos engajados em te proporcionar ferramentas 
+              que otimizem suas buscas de maneira assertiva.
+            </p>
+            <p>
+              Aqui no hashtagfinder, você acessa de forma rápida e simples as hashs mais comentadas do Twitter, 
+              garantindo assim maior interação em suas postagens, além de monitorar o crescimento de suas próprias 
+              hashes personalizadas e te deixar por dentro das maiores novidades, e tudo isso de forma gratuita.
+            </p>
           </div>
         </div>
-        <div className="aboutUs">
-          <div className="aboutTitle">
-            <h1>Quem somos</h1>
-          </div>
-          <div className="aboutUsBox">
-            {
-              aboutUs.map(item => <div className="aboutBox">
-                <div className="aboutBoxImage">
-                  <img src={item.img} alt={item.name} className="aboutImage"/>
-                </div>
-                <div className="aboutName"><h2>{item.name}</h2></div>
-                <div  className="aboutText"><p>{item.about}</p></div>
-                <div className="aboutBoxIcon">
-                  <img src= {IconGithub} alt= "github" className="iconImage"/>
-                  <img src= {IconEnvelope} alt= "envelope" className="iconImage"/>
-                  <img src= {IconLinkedin} alt= "linkedin" className="iconImage"/>
-                </div>
-              </div>
-            )}
-          </div>
+        <div className="aboutIlustration">
+          <img src= {IconIlustration} alt= "ilustração" className="IlustrationImage"/>
         </div>
       </div>
+      <div className="aboutUs">
+        <div className="aboutTitle">
+          <h1>Quem somos</h1>
+        </div>
+        <div className="aboutUsBox">
+          {
+            aboutUs.map((item, index) => <div className="aboutBox"  key={index}>
+              <div className="aboutBoxImage">
+                <img src={item.img} alt={item.name} className="aboutImage"/>
+              </div>
+              <div className="aboutName"><h2>{item.name}</h2></div>
+              <div  className="aboutText"><p>{item.about}</p></div>
+              <div className="aboutBoxIcon">
+                <img src= {IconGithub} alt= "github" className="iconImage"/>
+                <img src= {IconEnvelope} alt= "envelope" className="iconImage"/>
+                <img src= {IconLinkedin} alt= "linkedin" className="iconImage"/>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="aboutFooter">
+        <p>@Cocreare 2022. Todos os direitos reservados</p>
+      </div> 
+    </div>
     </>
   )
 }
