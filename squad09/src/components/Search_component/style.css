@@ -1,5 +1,5 @@
 body {
-     background-image: url(../../assets/about-hero-bg.jpg); 
+    background-image: url(../../assets/about-hero-bg.jpg);
     background-position: 60%;
 
 }
@@ -13,7 +13,6 @@ body {
     flex-direction: column;
     background-color: rgba(4, 4, 133, 0.868);
     background-image: linear-gradient(to bottom right, #132B66, #001D5A);
-
     opacity: 0.82;
 
 
@@ -37,57 +36,6 @@ body {
 
 }
 
-.Find {
-    font-weight: 600;
-}
-
-.buttons {
-    margin-right: 40px;
-}
-
-.buttonHeader {
-    top: 36px;
-    height: 25px;
-    width: 100px;
-    margin-right: 64px;
-    color: #FFFFFF;
-    border: none;
-    background: #1E3E7B 0% 0% no-repeat padding-box;
-    border-radius: 25px;
-    opacity: 1;
-
-
-}
-
-.buttonHome {
-    top: 36px;
-    height: 25px;
-    width: 100px;
-    margin-right: 10px;
-
-    background: #72EFDB 0% 0% no-repeat padding-box;
-    border-radius: 25px;
-    opacity: 1;
-    border: none;
-
-}
-
-.ListTable {
-    display: flex;
-    margin-left: 183px;
-    margin-right: 183px;
-    flex-direction: column;
-    margin-top: 0px;
-    background: #18326B;
-    height: 658px;
-    border-radius: 14px;
-
-
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    opacity: 1;
-}
-
 .hastag {
     margin-top: 40px;
     margin-left: 64px;
@@ -104,19 +52,59 @@ body {
 
 }
 
-.ListConatainer {
-    display: flex;
-    align-items: flex-end;
-    padding: 30px;
-    background: #000F63;
-    border-radius: 14px;
+.Find {
+    font-weight: 600;
+}
+
+.buttons {
+    margin-right: 40px;
+}
+
+.buttonHeader {
+    top: 36px;
+    height: 49px;
+    width: 170px;
+    margin-right: 49px;
+    color: #FFFFFF;
+    border: none;
+    background: #1E3E7B 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    cursor: pointer;
     opacity: 1;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    height: 1081px;
 
 
 }
+
+.buttonHome {
+    top: 36px;
+    height: 49px;
+    width: 170px;
+    margin-right: 10px;
+
+    background: #72EFDB 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+
+}
+
+.ListTable {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    margin-top: 0px;
+    background: #18326B;
+    height: 588px;
+    border-radius: 14px;
+
+
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    opacity: 1;
+}
+
 
 .ListTitle {
     color: #72EFDB;
@@ -125,11 +113,11 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 600;
-    margin-left: 180px;
+    margin-left: 10%;
 
 }
 
-.ListColumns {
+.HeaderTable {
     display: flex;
     align-items: flex-end;
     padding-top: 0px;
@@ -140,32 +128,42 @@ body {
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     height: 80px;
+    margin: auto;
 }
 
-.ListColumns {
+.HeaderTable {
     color: #72EFDB;
+    margin-bottom: 10px;
     font-family: 'Rubik';
     padding-left: 34.1px;
     font-weight: 600;
     justify-content: space-between;
+
+}
+
+.hashTagColumn {
+    margin-bottom: 20px;
 }
 
 .dateColumn {
     width: 57px;
     padding-left: 70%;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .hourColumn {
     display: flex;
     margin-right: 60px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 /* Listas das Hastags */
 ul {
     list-style: none;
     padding-left: 34.1px;
+
 }
 
 .Line {
@@ -190,6 +188,7 @@ ul {
     color: #FFFFFF;
     font: 'Montserrat,Regular';
     padding-top: 5px;
+    height: 30px;
 }
 
 .dateColumns {
@@ -210,150 +209,51 @@ ul {
 
 }
 
-@media (max-width: 1501px) {
-   
-
-    .ListColumns {
-        display: flex;
-        align-items: flex-end;
-        padding-top: 0px;
-        background: #000F63;
-        border-radius: 14px;
-        height: 30px;
-        opacity: 1;
-        backdrop-filter: blur(30px);
-        -webkit-backdrop-filter: blur(30px);
-        height: 80px;
-    }
-
-    .ListColumns {
-        color: #72EFDB;
-        font-family: 'Rubik';
-        padding-left: 34.1px;
-        font-weight: 600;
-        justify-content: space-between;
-    }
-
-    .dateColumn {
-        width: 57px;
-        padding-left: 65%;
-        display: flex;
-    }
-
-    .hourColumn {
-        display: flex;
-        margin-right: 60px;
-        margin-left: 20px;
-    }
-
-    /* Listas das Hastags */
-    ul {
-        list-style: none;
-        padding-left: 34.1px;
-    }
-
-    .Line {
-        border: 0.1px solid #41558E;
-        margin-left: 23.8px;
-        margin-right: 23.8px;
-    }
-
-    .ListHastags {
-        display: flex;
-        margin-left: 3px;
-        margin-right: 40px;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 0px;
-        font: -webkit-mini-control;
-
-
-    }
-
-    .ListHastags {
-        color: #FFFFFF;
-        font: 'Montserrat,Regular';
-        padding-top: 5px;
-    }
-
-    .dateColumns {
-        width: 57px;
-        padding-left: 65%;
-        display: flex;
-        color: #72EFDB;
-        padding-top: 5px;
-
-    }
-
-    .hourColumns {
-        padding-top: 5px;
-        display: flex;
-        margin-right: 20px;
-        color: #72EFDB;
-
-
-    }
-
-}
-
-@media screen and (max-width: 1100px) {
-    .dateColumn {
-        width: 57px;
-        padding-left: 50%;
-        display: flex;
-    }
-
-    .hourColumn {
-        display: flex;
-        margin-right: 60px;
-        margin-left: 20px;
-    }
-
-    .dateColumns {
-        width: 57px;
-        padding-left: 50%;
-        display: flex;
-        color: #72EFDB;
-        padding-top: 5px;
-
-    }
-
-    .hourColumns {
-        padding-top: 5px;
-        display: flex;
-        margin-right: 20px;
-        color: #72EFDB;
-
-
-    }
-}
 
 /* Para modelos tablets */
 
-@media screen and (max-width: 768px) {
-    body {
-        background-image: url(../../assets/about-hero-bg.jpg);
-      
+@media screen and (max-width: 900px) {
+
+    .buttons {
+        margin-right: 5px;
 
     }
+
+    .buttonHeader {
+        margin-right: 10px;
+        height: 30px;
+        width: 106px;
+    }
+
+    .buttonHome {
+        height: 30px;
+        width: 106px;
+    }
+
+    .hastag {
+        margin-left: 5px;
+        margin-top: 0px;
+        height: 23px;
+    }
+
     .ListTable {
         display: flex;
-        margin-left: 183px;
-        margin-right: 183px;
+        margin-left: auto;
+        margin-right: auto;
         flex-direction: column;
         margin-top: 0px;
         background: #18326B;
         height: 658px;
         border-radius: 14px;
-    
-    
+
+
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
         opacity: 1;
     }
-    .ListColumns {
+
+    .HeaderTable {
         display: flex;
-        width: 100%;
         align-items: flex-end;
         padding-top: 0px;
         background: #000F63;
@@ -363,12 +263,13 @@ ul {
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
         height: 80px;
-        width: 344px;
+        margin: auto;
+
     }
 
     .dateColumn {
         width: 57px;
-        padding-left: 30%;
+        padding-left: 50%;
         margin-right: 7px;
         display: flex;
     }
@@ -377,13 +278,13 @@ ul {
         display: flex;
         margin-right: 60px;
         margin-left: 20px;
-        
+
 
     }
 
     .dateColumns {
         width: 57px;
-        padding-left: 30%;
+        padding-left: 50%;
         margin-right: 7px;
         display: flex;
         color: #72EFDB;
@@ -396,26 +297,35 @@ ul {
         display: flex;
         margin-right: 20px;
         color: #72EFDB;
-       
+
 
 
     }
 }
-@media screen and (max-width: 753px) {
-    ListColumns {
-        display: flex;
-        width: 100%;
-        align-items: flex-end;
-        padding-top: 0px;
-        background: #000F63;
-        border-radius: 14px;
-        height: 30px;
-        opacity: 1;
-        backdrop-filter: blur(30px);
-        -webkit-backdrop-filter: blur(30px);
-        height: 80px;
-        width: 344px;
+
+@media screen and (max-width: 840px) {
+    .hastag {
+        margin-left: 5px;
+        margin-top: 0px;
+        height: 23px;
+        padding-left: 0;
+        padding-right: 10px;
+
+        width: 0%;
+
     }
+
+    .buttonHome {
+        height: 30px;
+        width: 106px;
+    }
+
+    .ListTitle {
+        display: flex;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
     .hourColumns {
         padding-top: 5px;
         display: flex;
@@ -424,35 +334,50 @@ ul {
         padding-left: 25px;
 
     }
+
+    .HeaderTable {
+
+        padding: 0;
+    }
+
+    .hashTagColumn {
+        margin-bottom: 20px;
+
+        margin-left: 30px;
+
+    }
 }
+
 /* Para modelos mobile */
 
 @media screen and (max-width: 414px) {
-    .header{
+    .ListTitle {
+        display: flex;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    header {
         height: 82px;
         width: 414px;
         justify-content: space-between;
     }
-    .buttons{
+
+    .buttons {
         display: flex;
         margin-left: 20px;
     }
-    
-    .hastag {
-        margin-top: 40px;
-        margin-left: 4px;
-        width: 414px;
-        height: 42px;
-        padding: 5px;
-        font-size: x-large;
-        /* UI Properties */
-        color: var(--unnamed-color-ffffff);
-        text-align: left;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-    
+
+    .ListTable {
+        margin-right: auto;
+        padding-right: 0px;
+        width: 100%;
     }
+
+    .hastag {
+        font-size: 19px;
+    }
+
 
     .dateColumn {
         width: 57px;
@@ -483,4 +408,26 @@ ul {
         padding-left: 25px;
 
     }
+}
+@media screen and (max-width: 395px){
+    .header{
+        height: 82px;
+        width: 418px;
+    }
+    .ListMain {
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+}
+.dateColumn{
+    padding-left: 50%;
+}
+.dateColumns{
+    padding-left: 51%;
+}
+.HeaderTable{
+    margin-left: 4px;
+
+}
+
 }
