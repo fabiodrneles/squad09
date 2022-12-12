@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './style.css';
 import Header from "../../components/Header";
 import IconIlustration from '../../assets/about-ilustration.svg';
@@ -12,6 +13,7 @@ import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
 import IconLogo from '../../assets/logo.svg'
 import IconAbout from '../../assets/icon-info-circle.svg'
 import IconLogin from '../../assets/icon-user-alt.svg'
+
 
 
 function About(){
@@ -98,10 +100,17 @@ function About(){
               <div className="aboutName"><h2>{item.name}</h2></div>
               <div  className="aboutText"><p>{item.about}</p></div>
               <div className="aboutBoxIcon">
-                <img src= {IconGithub} alt= "github" className="iconImage"/>
-                <img src= {IconEnvelope} alt= "envelope" className="iconImage"/>
-                <img src= {IconLinkedin} alt= "linkedin" className="iconImage"/>
+                <a href={item.github} target='_blank'>
+                  <img src= {IconGithub} alt= "github" className="iconImage"/>
+                </a>
+                <a href={item.email} target='_blank'> 
+                  <img src= {IconEnvelope} alt= "envelope" className="iconImage"/>
+                </a>
+                <a href={item.linkedin} target='_blank'>
+                  <img src= {IconLinkedin} alt= "linkedin" className="iconImage"/>
+                </a>
               </div>
+
             </div>
           )}
         </div>

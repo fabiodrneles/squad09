@@ -102,7 +102,6 @@
   align-items: center;
   padding: 2%;
   margin-bottom: 8%;
-
 }
 .aboutBoxImage{
   display: flex;
@@ -124,14 +123,19 @@
   color: var(--collor-light);
   font-size: 80%;
 }
+.aboutBoxIcon a{
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
 .aboutBoxIcon{
   display: flex;
-  width: 100%;
+  width: 60%;
   justify-content: center;
+  padding: 2%;
 }
 .iconImage{
   display: flex;
-  margin: 4%;
 }
 .aboutFooter{
   text-align: center;
