@@ -6,8 +6,8 @@ import Login from '../../views/Login'
 import About from '../../views/About'
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
 
       <Routes>
         <Route path="/" element={ <Home /> }/>
@@ -19,5 +19,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
