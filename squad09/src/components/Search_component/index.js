@@ -9,10 +9,8 @@ function SeachComponent() {
         <header>
             <div className='ListMain ,mobile'>
 
-
                 <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
-
 
                     <div className='buttons'>
 
