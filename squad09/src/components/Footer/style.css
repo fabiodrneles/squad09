@@ -8,12 +8,11 @@
       height: 202px;
       top: 3947px;
       left: 0px;
-
-      background-color: #1e3e7b;
       display: flex;
       justify-content: center;
       align-items: center;
-
+      background: #1E3E7B 0% 0% no-repeat padding-box;
+      opacity: 0.72;
     }
     
     .footerDiv p {
