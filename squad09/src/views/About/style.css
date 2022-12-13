@@ -10,10 +10,11 @@
   background-color: var(--collor-dark);
   justify-content: space-between;
   padding: 0.5% 2% 0.5% 2% ;
-
+  align-items: center;
 }
 .headerImg{
   display: flex;
+  padding: 1%;
 }
 .headerBtn{
   display: flex;
@@ -21,25 +22,35 @@
   justify-content: end;
 }
 .btnAbout{
-  background-color: var(--collor-light);
   width: 40%;
+  height: 49px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 25%;
-  margin-right: 5%;
-  border: none;
+  top: 36px;
+  left: 1484px;
+  background: var(--collor-light) ;
+  box-shadow: 0px 3px 6px var(--collor-button-dark);
+  border-radius: 25px;
+  opacity: 1;
+  margin-right: 0;
+  cursor: pointer;
 }
 .btnLogin{
-  background-color:var(--collor-card-about);
-  color: var(--collor-white);
   width: 40%;
+  height: 49px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25%;
-  border: none;
+  top: 36px;
+  left: 1484px;
+  background: var(--collor-dark) ;
+  color: var(--collor-white)  ;
+  box-shadow: 0px 3px 6px #5538EE29;
+  border-radius: 25px;
+  opacity: 1;
+  margin-right: 0;
+  cursor: pointer;
 }
 .btnImgAbout{
   margin-right: 8%;
@@ -52,7 +63,9 @@
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 3%;
+  padding-top: 2%;
+  align-items: center;
+  padding-bottom: 3%;
 }
 .aboutProject{
   width: 50%;
@@ -63,6 +76,7 @@
 }
 .projectText{
   text-align: justify;
+  margin-top: 10%;
 }
 .aboutIlustration{
   width: 40%;
@@ -217,4 +231,8 @@
     font-size: .9rem;
     margin-top: 3%;
   }
+}
+.LOGIN{
+ 
+
 }
