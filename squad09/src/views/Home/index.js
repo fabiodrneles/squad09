@@ -1,21 +1,19 @@
-import React,{useState} from "react";
-import Header from "../../components/Header";
+import Top from "../../components/HeaderFabio";
+import Context from "../../components/context";
+import Footer from "../../components/Footer";
 
 
-function Home(){
-  const [btnName, setBtnName] = useState(['Pesquisar', 'Login'])
+function Home () {
+    return (
+        <>
+        
+            <Top/>
+            <Context/>
+            <Footer/>
+        
+        </>
 
-  return(
-    <>
-     <>
-      <div>
-        <Header button={btnName}/>
-      </div>
-      <h1>Aqui será a Home</h1> 
-
-    </>
-    Aqui será Home
-    </>
-  )
+    );
 }
+
 export default Home;

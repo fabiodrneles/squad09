@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#divBusca{
+    top: 729px;
+    left: 460px;
+    width:1000px;
+    height: 119px;
+    background: #1E3E7B 0% 0% no-repeat padding-box;
+    border-radius:72px;
+    opacity: 1;
+  }
+  
+  #txtBusca {
+    top: 759px;
+    left: 587px;
+    width: 197px;
+    height: 60px;
+
+
+    padding-top: 0px;
+    margin-top: 30px;
+    margin-left: 150px;
+    background-color:transparent;
+    border:none;
+    color: #8D9DA2;
+    text-align: left;
+    font: normal normal normal 50px/55px Rubik;
+    letter-spacing: 0px;
+    opacity: 0.57;
+  }
+
+  .FiSearch {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 60.68px;
+    margin-bottom: 50.17px;
+    opacity: 1;
+    font-size: 50px;
+    color: #72EFDB;
+  }
