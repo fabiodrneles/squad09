@@ -18,7 +18,8 @@
   opacity: 1;
   border: none;
   cursor: pointer;
-}
+} 
+
 .Title-header h2 { 
   margin-top: 20px;
   margin-left: 30px;
@@ -31,6 +32,7 @@
   letter-spacing: 0px;
   
 }
+
 .btnImgHome{
   margin-right: 8%;
 }
