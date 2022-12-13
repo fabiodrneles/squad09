@@ -102,54 +102,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.aboutBox{
-  max-width: 15%;
-  height: 300px;
-  display: flex;
-  font-size: .8rem;
-  flex-direction: column;
-  border: 1px solid #FFFFFF24;
-  border-radius: 5px;
-  margin: 1%;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-  margin-bottom: 8%;
-}
-.aboutBoxImage{
-  display: flex;
-  max-width: 100%;
-  justify-content: center;
-} 
-.aboutImage{
-  display: flex;
-  width: 60%;
-  padding: 1%;
-  border-radius: 50%;
-}
-.aboutText{
-  font-size: 100%;
-  max-height: 150px;
-  text-align: center;
-}
-.aboutName{
-  color: var(--collor-light);
-  font-size: 80%;
-}
-.aboutBoxIcon a{
-  display: flex;
-  justify-content: center;
-  margin: 10%;
-}
-.aboutBoxIcon{
-  display: flex;
-  width: 60%;
-  justify-content: center;
-  padding: 2%;
-}
-.iconImage{
-  display: flex;
+  width: 90%;
+
 }
 .aboutFooter{
   text-align: center;
@@ -158,21 +112,14 @@
   color: var(--collor-white);
   padding: 2%;
 }
-
 @media screen and (max-width:1112px) {
   .containerAbout{
     max-width: 1112px;
-  }
-  .aboutText{
-    font-size: .8rem;
-    text-align: center;
-    margin-bottom: 5%;
   }
   .aboutBox{
     font-size: .9rem;
     padding-bottom: 0;
   }
- 
 }
 @media screen and (max-width:768px) {
   .containerAbout{
@@ -209,30 +156,7 @@
     font-size: 1rem;
     margin-top: 3%;
   }
-  .aboutImage{
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .aboutText{
-    font-size: 100%;
-    max-height: 120px;
-  }
-  .aboutName{
-    font-size: .9rem;
-  }
   .aboutBoxIcon{
     margin-bottom: 3%;
   }
 } 
-@media screen and (max-width:562px){
-  .aboutBox{
-    max-width: 50%;
-    height: 350px;
-    font-size: .9rem;
-    margin-top: 3%;
-  }
-}
-.LOGIN{
- 
-
-}

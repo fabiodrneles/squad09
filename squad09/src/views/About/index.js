@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css';
 import Header from "../../components/Header";
+import PhotoAndIconAboutUs from "../../components/PhotoAndIconAboutUs";
 import IconIlustration from '../../assets/about-ilustration.svg';
 import IconMarcia from '../../assets/marcia.jpeg';
 import IconDaniel from '../../assets/daniel.jpeg';
@@ -17,6 +18,14 @@ import IconLogin from '../../assets/icon-user-alt.svg'
 
 function About(){
   const buttonName= ['SOBRE', 'LOGIN']
+  const iconsImg =[
+    {
+      iconGithub: IconGithub,
+      iconEmail: IconEnvelope,
+      iconLinkedin: IconLinkedin,
+    }
+
+  ]
   const aboutUs= [
     {
       name: 'Daniel Oliveira',
@@ -24,8 +33,8 @@ function About(){
       img: IconDaniel,
       email: 'nogueira.dan07@gmail.com',
       github: 'https://github.com/DanielNogueiraOliveira',
-      linkedin: 'https://www.linkedin.com/in/daniel-nogueira-6ba2711b0/'
-    
+      linkedin: 'https://www.linkedin.com/in/daniel-nogueira-6ba2711b0/',
+      
     },
     {
       name: 'Fabio Dorneles',
@@ -41,7 +50,8 @@ function About(){
       img: IconLeidy,
       email:'suverleide.olinto@gmail.com',
       github: 'https://github.com/LeidyOlinto',
-      linkedin: 'https://www.linkedin.com/in/leidy-olinto-356b9391/'
+      linkedin: 'https://www.linkedin.com/in/leidy-olinto-356b9391/',
+     
     },
     {
       name: 'Marcia Oliveira',
@@ -49,7 +59,8 @@ function About(){
       img: IconMarcia,
       email: 'bmg.olivier@gmail.com',
       github: 'https://github.com/marciadeoliveira',
-      linkedin: 'https://www.linkedin.com/in/marcia-b-oliveira/'
+      linkedin: 'https://www.linkedin.com/in/marcia-b-oliveira/',
+      
     },
   ]
   return(
@@ -91,27 +102,7 @@ function About(){
           <h1>Quem somos</h1>
         </div>
         <div className="aboutUsBox">
-          {
-            aboutUs.map((item, index) => <div className="aboutBox"  key={index}>
-              <div className="aboutBoxImage">
-                <img src={item.img} alt={item.name} className="aboutImage"/>
-              </div>
-              <div className="aboutName"><h2>{item.name}</h2></div>
-              <div  className="aboutText"><p>{item.about}</p></div>
-              <div className="aboutBoxIcon">
-                <a href={item.github} target='_blank'>
-                  <img src= {IconGithub} alt= "github" className="iconImage"/>
-                </a>
-                <a href={item.email} target='_blank'> 
-                  <img src= {IconEnvelope} alt= "envelope" className="iconImage"/>
-                </a>
-                <a href={item.linkedin} target='_blank'>
-                  <img src= {IconLinkedin} alt= "linkedin" className="iconImage"/>
-                </a>
-              </div>
-
-            </div>
-          )}
+          <PhotoAndIconAboutUs aboutUs={aboutUs}  iconsImg={iconsImg}/>
         </div>
       </div>
       <div className="aboutFooter">
