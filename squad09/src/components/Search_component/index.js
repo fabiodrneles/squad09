@@ -1,7 +1,7 @@
 import React from 'react';
-import './style.css';
-import { FaHome } from 'react-icons/fa';
-import { CgLogOff } from 'react-icons/cg';
+import './styless.css';
+//import { FaHome } from 'react-icons/fa';
+//import { CgLogOff } from 'react-icons/cg';
 
 
 function SeachComponent() {
@@ -9,7 +9,8 @@ function SeachComponent() {
         <header>
             <div className='ListMain ,mobile'>
 
-                <div className='header' >
+
+                {/* <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
 
                     <div className='buttons'>
@@ -25,7 +26,7 @@ function SeachComponent() {
                             </div>  SAIR</button>
                     </div>
 
-                </div>
+                </div> */}
 
                 <div className='ListTitle'>Buscas Realizadas</div>
                 <div className='ListTable'>
