@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './styless.css';
 import { FaHome } from 'react-icons/fa';
 import { CgLogOff } from 'react-icons/cg';
 
@@ -10,7 +10,7 @@ function SeachComponent() {
             <div className='ListMain ,mobile'>
 
 
-                <div className='header' >
+                {/* <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
 
 
@@ -27,7 +27,7 @@ function SeachComponent() {
                             </div>  SAIR</button>
                     </div>
 
-                </div>
+                </div> */}
 
                 <div className='ListTitle'>Buscas Realizadas</div>
                 <div className='ListTable'>

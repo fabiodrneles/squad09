@@ -156,17 +156,7 @@
     margin-bottom: 20px;
 }
 
-.dateColumn {
-    width: 57px;
-    padding-left: 70%;
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.hourColumn {
-    display: flex;
-    margin-right: 60px;
-    margin-left: 20px;
+.hashTagColumns {
     margin-bottom: 20px;
 }
 
