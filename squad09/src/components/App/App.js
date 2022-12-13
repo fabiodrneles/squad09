@@ -1,13 +1,10 @@
 import React from 'react';
-import Login from '../../views/Login/index';
-
+import { Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-
-
-      <Login/>
+      <Routes />
     </div>
   );
 }
