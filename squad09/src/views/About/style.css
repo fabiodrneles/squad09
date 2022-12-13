@@ -1,0 +1,238 @@
+.containerAbout{
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--collor-white);
+}
+.headerAbout{
+  display: flex;
+  background-color: var(--collor-dark);
+  justify-content: space-between;
+  padding: 0.5% 2% 0.5% 2% ;
+  align-items: center;
+}
+.headerImg{
+  display: flex;
+  padding: 1%;
+}
+.headerBtn{
+  display: flex;
+  width: 30%;
+  justify-content: end;
+}
+.btnAbout{
+  width: 40%;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 36px;
+  left: 1484px;
+  background: var(--collor-light) ;
+  box-shadow: 0px 3px 6px var(--collor-button-dark);
+  border-radius: 25px;
+  opacity: 1;
+  margin-right: 0;
+  cursor: pointer;
+}
+.btnLogin{
+  width: 40%;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 36px;
+  left: 1484px;
+  background: var(--collor-dark) ;
+  color: var(--collor-white)  ;
+  box-shadow: 0px 3px 6px #5538EE29;
+  border-radius: 25px;
+  opacity: 1;
+  margin-right: 0;
+  cursor: pointer;
+}
+.btnImgAbout{
+  margin-right: 8%;
+}
+.btnImgLogin{
+  margin-right: 8%;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  align-items: center;
+  padding-bottom: 3%;
+}
+.aboutProject{
+  width: 50%;
+  line-height: 200%;
+}
+.aboutProjectTitle{
+  font-size: larger;
+}
+.projectText{
+  text-align: justify;
+  margin-top: 10%;
+}
+.aboutIlustration{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+}
+.IlustrationImage{
+  width: 100%;
+}
+.aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+.aboutTitle{
+  width: 82%;
+  margin-bottom: 2%;
+}
+.aboutUsBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutBox{
+  max-width: 15%;
+  height: 300px;
+  display: flex;
+  font-size: .8rem;
+  flex-direction: column;
+  border: 1px solid #FFFFFF24;
+  border-radius: 5px;
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-bottom: 8%;
+}
+.aboutBoxImage{
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+} 
+.aboutImage{
+  display: flex;
+  width: 60%;
+  padding: 1%;
+  border-radius: 50%;
+}
+.aboutText{
+  font-size: 100%;
+  max-height: 150px;
+  text-align: center;
+}
+.aboutName{
+  color: var(--collor-light);
+  font-size: 80%;
+}
+.aboutBoxIcon a{
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+.aboutBoxIcon{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  padding: 2%;
+}
+.iconImage{
+  display: flex;
+}
+.aboutFooter{
+  text-align: center;
+  height: 20%;
+  background-color: var(--collor-dark);
+  color: var(--collor-white);
+  padding: 2%;
+}
+
+@media screen and (max-width:1112px) {
+  .containerAbout{
+    max-width: 1112px;
+  }
+  .aboutText{
+    font-size: .8rem;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .aboutBox{
+    font-size: .9rem;
+    padding-bottom: 0;
+  }
+ 
+}
+@media screen and (max-width:768px) {
+  .containerAbout{
+    max-width: 768px;
+  }
+  .headerAbout{
+    justify-content: space-around;
+  }
+  .headerBtn{
+    width: 50%;
+    justify-content: start;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutProject{
+    width: 100%;
+  }
+  .aboutIlustration{
+    margin-top: 10%;
+    width: 90%;
+  }
+  .aboutUsBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+  }
+  .aboutBox{
+    max-width: 35%;
+    height: 350px;
+    font-size: 1rem;
+    margin-top: 3%;
+  }
+  .aboutImage{
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .aboutText{
+    font-size: 100%;
+    max-height: 120px;
+  }
+  .aboutName{
+    font-size: .9rem;
+  }
+  .aboutBoxIcon{
+    margin-bottom: 3%;
+  }
+} 
+@media screen and (max-width:562px){
+  .aboutBox{
+    max-width: 50%;
+    height: 350px;
+    font-size: .9rem;
+    margin-top: 3%;
+  }
+}
+.LOGIN{
+ 
+
+}

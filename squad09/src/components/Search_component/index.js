@@ -1,14 +1,30 @@
+import React from 'react';
 import './style.css';
+import { FaHome } from 'react-icons/fa';
+import { CgLogOff } from 'react-icons/cg';
 
-function Seach() {
+
+function SeachComponent() {
     return (
         <header>
-            <div className='ListMain'>
+            <div className='ListMain ,mobile'>
+
+
                 <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
+
+
                     <div className='buttons'>
-                        <button className='buttonHome'>Home</button>
-                        <button className='buttonHeader'>sair</button>
+
+                        <button className='buttonHome'>
+                            <div className='iconeHome'>
+                                <FaHome />
+                            </div>  HOME
+                        </button>
+                        <button className='buttonHeader'>
+                            <div className='iconeOff'>
+                                <CgLogOff />
+                            </div>  SAIR</button>
                     </div>
 
                 </div>
@@ -18,7 +34,7 @@ function Seach() {
 
                     <container className='ListContainer'>
 
-                        <div className='ListColumns'>
+                        <div className='HeaderTable'>
                             <p className='hashTagColumn'>HashTag</p>
                             <p className='dateColumn'>Data</p>
                             <p className='hourColumn'>Hora</p>
@@ -29,6 +45,7 @@ function Seach() {
                             <li className='hourColumns'>09:35</li>
                         </ul>
                         <hr className='Line'></hr>
+
                         <ul className='ListHastags'>
                             <li className='ListMarcadores'>#hastagname</li>
                             <li className='dateColumns'>25/02</li>
@@ -83,7 +100,7 @@ function Seach() {
                             <li className='hourColumns'>09:35</li>
                         </ul>
                         <hr className='Line'></hr>
-                        
+
                     </container>
 
                 </div>
@@ -91,4 +108,4 @@ function Seach() {
         </header>
     );
 };
-export default Seach;
+export default SeachComponent;
