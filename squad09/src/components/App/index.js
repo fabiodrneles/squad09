@@ -4,7 +4,6 @@ import Home from '../../views/Home'
 import Search from '../../views/Search'
 import Login from '../../views/Login'
 import About from '../../views/About'
-import Footer from '../Footer/index'
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/about" element={ <About/> }/>
       </Routes>
 
-      <Footer/>
     </div>
   );
 }
