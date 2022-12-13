@@ -6,15 +6,16 @@ import Login from '../../views/Login'
 import About from '../../views/About'
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
 
-import Seach from '../Search/index.js';
-function App() {
-  return (
-    <div className="App">
-      <Seach/>
->>>>>>>>> Temporary merge branch 2
-
-
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/search" element={<Search />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </div>
+    )
+}
 export default App;

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Login from '../../views/Login/index';
 
@@ -12,5 +11,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
