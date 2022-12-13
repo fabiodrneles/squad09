@@ -4,11 +4,12 @@ import { FaHome } from 'react-icons/fa';
 import { CgLogOff } from 'react-icons/cg';
 
 
-
 function SeachComponent() {
     return (
         <header>
             <div className='ListMain ,mobile'>
+
+
                 <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
 
