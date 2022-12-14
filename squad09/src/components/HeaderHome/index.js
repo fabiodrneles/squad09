@@ -2,15 +2,20 @@ import React from "react";
 import "./style.css";
 import { IoInformationCircleSharp } from 'react-icons/io5';
 import { BsFillPersonFill } from 'react-icons/bs';
+import { Link } from "react-router-dom";
 
 function Top() {
   return (
     <div ClassName="Header">
 
       <div className="caixaMaior">
-        <div>
-          <h2>hashtag<span>finder</span></h2>
-        </div>
+
+        <Link to="/">
+          {" "}
+          <h2>
+            hashtag<span>finder</span>
+          </h2>
+        </Link>
 
         <div className="botoes">
           <button className="btnLeft">
@@ -19,7 +24,6 @@ function Top() {
             </div>
             <p>Sobre</p>
           </button>
-
 
           <button className="btnRight">
             <div className="person">

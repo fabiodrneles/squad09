@@ -1,16 +1,16 @@
-import Top from "../../components/HeaderFabio";
+import Top from "../../components/HeaderHome";
 import Context from "../../components/context";
 import Footer from "../../components/Footer";
 
 
-function Home () {
+function Home() {
     return (
         <>
-        
-            <Top/>
-            <Context/>
-            <Footer/>
-        
+
+            <Top />
+            <Context />
+            <Footer />
+
         </>
 
     );
