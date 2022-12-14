@@ -1,6 +1,5 @@
 import React from "react";
 import './style.css';
-import Header from "../../components/Header";
 import PhotoAndIconAboutUs from "../../components/PhotoAndIconAboutUs";
 import IconIlustration from '../../assets/about-ilustration.svg';
 import IconMarcia from '../../assets/marcia.jpeg';
@@ -18,14 +17,6 @@ import IconLogin from '../../assets/icon-user-alt.svg'
 
 function About(){
   const buttonName= ['SOBRE', 'LOGIN']
-  const iconsImg =[
-    {
-      iconGithub: IconGithub,
-      iconEmail: IconEnvelope,
-      iconLinkedin: IconLinkedin,
-    }
-
-  ]
   const aboutUs= [
     {
       name: 'Daniel Oliveira',
@@ -34,6 +25,9 @@ function About(){
       email: 'nogueira.dan07@gmail.com',
       github: 'https://github.com/DanielNogueiraOliveira',
       linkedin: 'https://www.linkedin.com/in/daniel-nogueira-6ba2711b0/',
+      iconGithub: IconGithub,
+      iconEmail: IconEnvelope,
+      iconLinkedin: IconLinkedin,
       
     },
     {
@@ -43,6 +37,9 @@ function About(){
       email: 'fabiodrneles@gmail.com',
       github: 'https://github.com/fabiodrneles',
       linkedin: 'https://www.linkedin.com/in/fabiodrneles/',
+      iconGithub: IconGithub,
+      iconEmail: IconEnvelope,
+      iconLinkedin: IconLinkedin,
     },
     {
       name: 'Leidy Olinto',
@@ -51,6 +48,9 @@ function About(){
       email:'suverleide.olinto@gmail.com',
       github: 'https://github.com/LeidyOlinto',
       linkedin: 'https://www.linkedin.com/in/leidy-olinto-356b9391/',
+      iconGithub: IconGithub,
+      iconEmail: IconEnvelope,
+      iconLinkedin: IconLinkedin,
      
     },
     {
@@ -60,6 +60,9 @@ function About(){
       email: 'bmg.olivier@gmail.com',
       github: 'https://github.com/marciadeoliveira',
       linkedin: 'https://www.linkedin.com/in/marcia-b-oliveira/',
+      iconGithub: IconGithub,
+      iconEmail: IconEnvelope,
+      iconLinkedin: IconLinkedin,
       
     },
   ]
@@ -71,8 +74,14 @@ function About(){
           <img src= {IconLogo} alt= "logo" className="imgLogo"/>
         </div>
         <div className="headerBtn">
-          <button className="btnAbout"><img src={IconAbout} alt={IconAbout} className="btnImgAbout"/>SOBRE</button>
-          <button className="btnLogin"><img src={IconLogin} alt={IconLogin} className="btnImgLogin"/>LOGIN</button>
+          <button className="btnAbout">
+            <img src={IconAbout} alt={IconAbout} className="btnImgAbout"/>
+            SOBRE
+          </button>
+          <button className="btnLogin">
+            <img src={IconLogin} alt={IconLogin} className="btnImgLogin"/>
+            LOGIN
+          </button>
         </div>
       </div>
       <div className="about">

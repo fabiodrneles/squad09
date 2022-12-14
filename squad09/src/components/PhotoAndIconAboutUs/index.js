@@ -1,4 +1,3 @@
-import IconMediaSocial from "../IconMediaSocial"
 import './style.css';
 function PhotoAndIconAboutUs(props){
   return(
@@ -10,7 +9,19 @@ function PhotoAndIconAboutUs(props){
         </div>
         <div className="aboutName"><h2>{item.name}</h2></div>
         <div  className="aboutText"><p>{item.about}</p></div>
-        <IconMediaSocial iconsImg={ props.iconsImg}/>
+        <div className="aboutBoxIcon">
+          <a href={item.github}>
+            <img src= {item.iconGithub} alt= "github" className="iconImage"/>
+          </a>
+          <a href={item.email}>
+            <img src= {item.iconEmail} alt= "github" className="iconImage"/>
+          </a>
+          <a href={item.linkedin}>
+            <img src= {item.iconLinkedin} alt= "github" className="iconImage"/>
+          </a>
+        </div>
+      
+
       </div>
     )}
   

@@ -6,7 +6,12 @@ function Header(props){
     <div className='header'>
       <img src= { Logo } alt= "logo"/>
       {
-        props.button.map( (item,index) => <button key={index}>{item}</button> )
+        props.button.map( (item,index) => 
+        <button key={index} className ={item.toLowerCase()}>
+          <img src={props.x} alt={props.x}/>
+          {item}
+        </button> )
+        
       }
     </div>
   )
