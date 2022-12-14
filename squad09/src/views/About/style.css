@@ -7,56 +7,9 @@
 }
 .headerAbout{
   display: flex;
-  background-color: var(--collor-dark);
+  width: 100%;
   justify-content: space-between;
-  padding: 0.5% 2% 0.5% 2% ;
   align-items: center;
-}
-.headerImg{
-  display: flex;
-  padding: 1%;
-}
-.headerBtn{
-  display: flex;
-  width: 30%;
-  justify-content: end;
-}
-.btnAbout{
-  width: 40%;
-  height: 49px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 36px;
-  left: 1484px;
-  background: var(--collor-light) ;
-  box-shadow: 0px 3px 6px var(--collor-button-dark);
-  border-radius: 25px;
-  opacity: 1;
-  margin-right: 0;
-  cursor: pointer;
-}
-.btnLogin{
-  width: 40%;
-  height: 49px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 36px;
-  left: 1484px;
-  background: var(--collor-dark) ;
-  color: var(--collor-white)  ;
-  box-shadow: 0px 3px 6px #5538EE29;
-  border-radius: 25px;
-  opacity: 1;
-  margin-right: 0;
-  cursor: pointer;
-}
-.btnImgAbout{
-  margin-right: 8%;
-}
-.btnImgLogin{
-  margin-right: 8%;
 }
 .about{
   display: flex;
@@ -103,7 +56,6 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-
 }
 .aboutFooter{
   text-align: center;
@@ -127,10 +79,6 @@
   }
   .headerAbout{
     justify-content: space-around;
-  }
-  .headerBtn{
-    width: 50%;
-    justify-content: start;
   }
   .about{
     display: flex;

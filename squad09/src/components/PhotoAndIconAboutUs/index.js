@@ -20,8 +20,6 @@ function PhotoAndIconAboutUs(props){
             <img src= {item.iconLinkedin} alt= "github" className="iconImage"/>
           </a>
         </div>
-      
-
       </div>
     )}
   

@@ -1,5 +1,6 @@
 import React from "react";
 import './style.css';
+import Header from "../../components/Header";
 import PhotoAndIconAboutUs from "../../components/PhotoAndIconAboutUs";
 import IconIlustration from '../../assets/about-ilustration.svg';
 import IconMarcia from '../../assets/marcia.jpeg';
@@ -9,14 +10,26 @@ import IconLeidy from '../../assets/leidy.jpeg';
 import IconGithub from '../../assets/icon-github.svg';
 import IconEnvelope from '../../assets/icon-envelope.svg';
 import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
-import IconLogo from '../../assets/logo.svg'
 import IconAbout from '../../assets/icon-info-circle.svg'
 import IconLogin from '../../assets/icon-user-alt.svg'
 
-
-
 function About(){
-  const buttonName= ['SOBRE', 'LOGIN']
+  const buttonStyles =[
+    {
+      title: "SOBRE",
+      icon: IconAbout,
+      route: "/about",
+      textColor: "#0A1744",
+      backgroundColor: "#72EFDB",
+    },
+    {
+      title: "LOGIN",
+      icon: IconLogin,
+      route: "/login",
+      textColor: "#FFF",
+      backgroundColor: "#0B1A49",
+    },
+  ]
   const aboutUs= [
     {
       name: 'Daniel Oliveira',
@@ -51,7 +64,6 @@ function About(){
       iconGithub: IconGithub,
       iconEmail: IconEnvelope,
       iconLinkedin: IconLinkedin,
-     
     },
     {
       name: 'Marcia Oliveira',
@@ -63,26 +75,13 @@ function About(){
       iconGithub: IconGithub,
       iconEmail: IconEnvelope,
       iconLinkedin: IconLinkedin,
-      
     },
   ]
   return(
     <>
     <div className="containerAbout">
       <div className="headerAbout">
-        <div className="headerImg">
-          <img src= {IconLogo} alt= "logo" className="imgLogo"/>
-        </div>
-        <div className="headerBtn">
-          <button className="btnAbout">
-            <img src={IconAbout} alt={IconAbout} className="btnImgAbout"/>
-            SOBRE
-          </button>
-          <button className="btnLogin">
-            <img src={IconLogin} alt={IconLogin} className="btnImgLogin"/>
-            LOGIN
-          </button>
-        </div>
+        <Header buttons={buttonStyles}/> 
       </div>
       <div className="about">
         <div className="aboutProject">
@@ -111,7 +110,7 @@ function About(){
           <h1>Quem somos</h1>
         </div>
         <div className="aboutUsBox">
-          <PhotoAndIconAboutUs aboutUs={aboutUs}  iconsImg={iconsImg}/>
+          <PhotoAndIconAboutUs aboutUs={aboutUs}/>
         </div>
       </div>
       <div className="aboutFooter">
