@@ -14,7 +14,7 @@ function Login() {
 
     return (
         <div className="container">
-          <Header buttons={buttonStyles}/> 
+          <Header buttons={buttonStyles}/>  
 
             <div className="container-login">
                 <div className="wrap-login">
