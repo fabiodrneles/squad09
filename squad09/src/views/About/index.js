@@ -10,15 +10,15 @@ import IconLeidy from '../../assets/leidy.jpeg';
 import IconGithub from '../../assets/icon-github.svg';
 import IconEnvelope from '../../assets/icon-envelope.svg';
 import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
-import IconAbout from '../../assets/icon-info-circle.svg'
+import IconHome from '../../assets/icon-home.svg'
 import IconLogin from '../../assets/icon-user-alt.svg'
 
 function About(){
   const buttonStyles =[
     {
-      title: "SOBRE",
-      icon: IconAbout,
-      route: "/about",
+      title: "HOME",
+      icon: IconHome,
+      route: "/",
       textColor: "#0A1744",
       backgroundColor: "#72EFDB",
     },
@@ -41,7 +41,6 @@ function About(){
       iconGithub: IconGithub,
       iconEmail: IconEnvelope,
       iconLinkedin: IconLinkedin,
-      
     },
     {
       name: 'Fabio Dorneles',
@@ -80,9 +79,7 @@ function About(){
   return(
     <>
     <div className="containerAbout">
-      <div className="headerAbout">
-        <Header buttons={buttonStyles}/> 
-      </div>
+      <Header buttons={buttonStyles}/> 
       <div className="about">
         <div className="aboutProject">
           <div className="aboutProjectTitle">

@@ -5,12 +5,6 @@
   flex-direction: column;
   color: var(--collor-white);
 }
-.headerAbout{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
 .about{
   display: flex;
   justify-content: space-between;
@@ -76,9 +70,6 @@
 @media screen and (max-width:768px) {
   .containerAbout{
     max-width: 768px;
-  }
-  .headerAbout{
-    justify-content: space-around;
   }
   .about{
     display: flex;

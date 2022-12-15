@@ -26,8 +26,9 @@ function Header(props){
                 justifyContent: 'center',
                 marginRight:'10px',
                 alignItems: 'center',
-                boxShadow: '0px 3px 6px var(--collor-button-dark)'
+                boxShadow: '0px 3px 6px var(--collor-button-dark)',
               }
+                         
             }>
             <img src={item.icon} alt={item.icon} 
               style={
