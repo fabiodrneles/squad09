@@ -32,7 +32,6 @@ function SeachComponent() {
                 {/* <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
 
-
                     <div className='buttons'>
 
                         <button className='buttonHome'>
