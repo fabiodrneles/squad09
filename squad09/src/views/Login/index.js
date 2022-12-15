@@ -1,16 +1,20 @@
 import './style.css';
-import React, { useState } from "react";
 import Header from "../../components/Header";
+import IconHome from '../../assets/icon-home.svg'
 
 function Login() {
-    const [btnName, setBtnName] = useState(['Home'])
+    const buttonStyles =[
+      {
+        title: "HOME",
+        icon: IconHome,
+        route: "/",
+        textColor: "#0A1744",
+        backgroundColor: "#72EFDB",
+      },]
 
     return (
         <div className="container">
-
-            <div>
-                <Header button={btnName} />
-            </div>
+          <Header buttons={buttonStyles}/> 
 
             <div className="container-login">
                 <div className="wrap-login">

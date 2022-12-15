@@ -7,7 +7,8 @@
   background-color: #0A1744;
 }
 
-.button {
+.headerBtn {
+  display: flex;
   height: 30px;
   width: 95px;
   margin-top: 22px;
@@ -33,9 +34,7 @@
   
 }
 
-.btnImgHome{
-  margin-right: 8%;
-}
+
 
 .Title-header span {
   font: normal normal bold 28px/29px Rubik;
