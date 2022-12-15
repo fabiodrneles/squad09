@@ -1,14 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Rubik", sans-serif;
-  scroll-behavior: smooth;
-}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Rubik', sans-serif;
@@ -21,13 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-:root{
-  --collor-white:#FFFFFF;
-  --collor-light:#72EFDB;
-  --button-medium:#1E3E7B;
-  --collor-dark:#0A1744;
-  --collor-box-login:#18326B;
-  --collor-input-serach:#1E3E7B;
-  --collor-card-about: #0B1A49;
-  --collor-button-dark: #5538EE29;
+
+:root {
+  --collor-white: #FFFFFF;
+  --collor-light: #72EFDB;
+  --button-medium: #1E3E7B;
+  --collor-dark: #0A1744;
+  --collor-box-login: #18326B;
+  --collor-input-serach: #1E3E7B;
 }

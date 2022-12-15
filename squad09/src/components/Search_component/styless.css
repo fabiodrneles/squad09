@@ -1,0 +1,73 @@
+/* Titulo busca realizadas */
+.ListTitle {
+    color: #72EFDB;
+    font-size: 30px;
+    font-family: 'Rubik';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-left: 10%;
+
+}
+/* Box tatle */
+.ListTable {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    margin-top: 0px;
+    background: #18326B;
+    height: 758px;
+    border-radius: 14px;
+
+
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    opacity: 1;
+}
+.HeaderTable {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 0px;
+    background: #000F63;
+    border-radius: 14px;
+    height: 30px;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    height: 80px;
+    margin: auto;
+}
+.HeaderTable {
+    color: #72EFDB;
+    margin-bottom: 10px;
+    font-family: 'Rubik';
+    padding-left: 34.1px;
+    font-weight: 600;
+    justify-content: space-between;
+
+}
+.hashTagColumn {
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding-left: 34.1px;
+
+}
+.Line {
+    border: 0.1px solid #41558E;
+    margin-left: 23.8px;
+    margin-right: 23.8px;
+}
+.ListHastags {
+    display: flex;
+    margin-left: 3px;
+    margin-right: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    font: -webkit-mini-control;
+
+
+}
