@@ -28,7 +28,7 @@ function About(){
       icon: IconLogin,
       route: "/login",
       textColor: "#FFF",
-      backgroundColor: "#0B1A49",
+      backgroundColor: "#1E3E7B",
     },
   ]
   const aboutUs= [

@@ -1,9 +1,10 @@
+
 .containerAbout{
   max-width: 1920px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  color: var(--collor-white);
+  background-image: url('../../assets/table-bg.jpg');
+  color:  #FFFFFF;
 }
 .about{
   display: flex;

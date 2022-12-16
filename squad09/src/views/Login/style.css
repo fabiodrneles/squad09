@@ -1,23 +1,4 @@
 
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-*/
-
-TODO VERIFICAR O BACKGROUND IMAGE HERO
-
-body {
-    background-image: url(../../assets/hero-bg.jpg);
-    background-position: 60%;
-}
-
-
-
 .container {
     width: 100%;
     margin: 0 auto;
@@ -25,13 +6,15 @@ body {
 }
 
 .container-login {
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     padding: 70px;
+    background-image: url('../../assets/hero-bg.jpg');
+    background-position: 60%;
 }
 
 .form-login {

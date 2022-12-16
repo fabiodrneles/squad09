@@ -1,10 +1,6 @@
-*{
-    padding: 0;
-    margin-bottom: 0;
-  }
-  
-  .footerDiv {
-      width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.footerDiv {
       height: 150px;
       top: 3947px;
       left: 0px;

@@ -4,7 +4,7 @@ import './style.css';
 
 function Header(props){
   return(
-    <div className='header'>
+    <div className='headerTop'>
       <div className='headerLogo'>
         <Link to={'/'}>
           <img src= { Logo } alt= "logo"/>
@@ -27,6 +27,7 @@ function Header(props){
                 marginRight:'10px',
                 alignItems: 'center',
                 boxShadow: '0px 3px 6px var(--collor-button-dark)',
+                border: 'none',
               }
                          
             }>
