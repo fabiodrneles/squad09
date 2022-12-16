@@ -1,3 +1,12 @@
+*body{
+    background-image: url(../../assets/about-hero-bg.jpg);
+    height: auto;
+    width: 100%;
+    display: flex;
+    left: 0;
+  
+}
+
 
 /* Layout Properties */
 /* .ListMain {
@@ -13,15 +22,23 @@
 
 } */
 
+.pageSearch{
+    background-image: url(../../assets/about-hero-bg.jpg);
+    height: auto;
+    width: auto;
+   
+   
+  
+}
 .header {
     /* margin-left: 0px;
     margin-top: 0px; */
  
     /* height: 117px; */
-
-
+    
+   
     background: #0A1744 0% 0% no-repeat padding-box;
-    /* box-shadow: 0px 3px 29px #5538EE1F; */
+    box-shadow: 0px 3px 29px #5538EE1F; 
     opacity: 1;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
@@ -100,6 +117,7 @@
 
 } */
 
+/* BOX DA LISTA DE BUSCA */
 .ListTable {
     display: flex;
     margin-left: 20%;
@@ -109,15 +127,12 @@
     background: #18326B;
     height: 558px;
     border-radius: 14px;
-    margin-bottom:  10%;
-
-
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     opacity: 1;
 }
 
-
+/* Titulo busca realizadas */
 .ListTitle {
     color: #72EFDB;
     font-size: 30px;
@@ -129,6 +144,7 @@
 
 }
 
+/*BOX DA #/DATE/HOUR*/
 .HeaderTable {
     display: flex;
     padding-top: 10px;
@@ -139,9 +155,16 @@
     -webkit-backdrop-filter: blur(30px);
     height: 80px;
     margin: auto;
+
+    color: #72EFDB;
+    margin-bottom: 10px;
+    font-family: 'Rubik';
+    padding-left: 34.1px;
+    font-weight: 600;
+    justify-content: space-between;
 }
 
-.HeaderTable {
+/* .HeaderTable {
     color: #72EFDB;
     margin-bottom: 10px;
     font-family: 'Rubik';
@@ -150,7 +173,7 @@
     justify-content: space-between;
    
 
-}
+} */
 /* 
 .hashTagColumn {
     margin-bottom: 20px;
@@ -182,18 +205,17 @@ ul {
     margin-top: 10px;
     font: -webkit-mini-control;
 
+    color: #FFFFFF;
+    font: 'Montserrat,Regular';
+    padding-top: 5px;
+    height: 20px;
 
 }
 .hashTagColumn{
     padding-top: 10px;
 }
 
-.ListHastags {
-    color: #FFFFFF;
-    font: 'Montserrat,Regular';
-    padding-top: 5px;
-    height: 20px;
-}
+
 .dateColumn {
     width: 57px;
     padding-left: 60%;

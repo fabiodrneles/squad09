@@ -24,7 +24,7 @@ function SeachComponent() {
         },
     ]
     return (
-        <header>
+        <header className='pageSearch'>
             <div className='ListMain ,mobile'>
                 <Header buttons={buttonStyles} />
 
