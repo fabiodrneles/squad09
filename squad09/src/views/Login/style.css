@@ -1,5 +1,5 @@
 
-
+/*
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +7,15 @@
     overflow: hidden;
 }
 
+*/
+
+TODO VERIFICAR O BACKGROUND IMAGE HERO
+
 body {
     background-image: url(../../assets/hero-bg.jpg);
     background-position: 60%;
 }
+
 
 
 .container {

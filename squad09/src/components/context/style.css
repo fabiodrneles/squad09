@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../../assets/hero-bg.jpg) no-repeat;
+   /* background: url(../../assets/hero-bg.jpg) no-repeat;*/
     background-size: cover;
 }
 

@@ -1,4 +1,4 @@
-import Context from "../../components/context";
+//import Context from "../../components/context";
 import Footer from "../../components/Footer";
 //import IconSearch from '../../assets/icon-search.svg'; => imagem da lupa
 import IconLogin from '../../assets/icon-user-alt.svg'
@@ -32,7 +32,7 @@ function Home() {
         <>
 
             <Header buttons={buttonStyles}/>
-            <Context />
+            {/*<Context /> */}
             <Footer />
 
         </>
