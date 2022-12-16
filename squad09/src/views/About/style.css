@@ -51,13 +51,6 @@
   align-items: center;
   width: 90%;
 }
-.aboutFooter{
-  text-align: center;
-  height: 20%;
-  background-color: var(--collor-dark);
-  color: var(--collor-white);
-  padding: 2%;
-}
 @media screen and (max-width:1112px) {
   .containerAbout{
     max-width: 1112px;

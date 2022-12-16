@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css';
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import PhotoAndIconAboutUs from "../../components/PhotoAndIconAboutUs";
 import IconIlustration from '../../assets/about-ilustration.svg';
 import IconMarcia from '../../assets/marcia.jpeg';
@@ -10,8 +11,8 @@ import IconLeidy from '../../assets/leidy.jpeg';
 import IconGithub from '../../assets/icon-github.svg';
 import IconEnvelope from '../../assets/icon-envelope.svg';
 import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
-import IconHome from '../../assets/icon-home.svg'
-import IconLogin from '../../assets/icon-user-alt.svg'
+import IconHome from '../../assets/icon-home.svg';
+import IconLogin from '../../assets/icon-user-alt.svg';
 
 function About(){
   const buttonStyles =[
@@ -110,9 +111,7 @@ function About(){
           <PhotoAndIconAboutUs aboutUs={aboutUs}/>
         </div>
       </div>
-      <div className="aboutFooter">
-        <p>@Cocreare 2022. Todos os direitos reservados</p>
-      </div> 
+      <Footer/>
     </div>
     </>
   )
