@@ -117,7 +117,7 @@ function SeachComponent() {
                             <li className='dateColumns'>25/02</li>
                             <li className='hourColumns'>09:35</li>
                         </ul>
-                        <hr className='Line'></hr>
+                
 
                     </container>
 
