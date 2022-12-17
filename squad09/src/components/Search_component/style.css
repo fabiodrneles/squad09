@@ -1,4 +1,4 @@
-*body{
+*body {
     background-image: url(../../assets/about-hero-bg.jpg);
     height: auto;
     width: 100%;
@@ -16,7 +16,7 @@
     background-image: url('../../assets/table-bg.jpg');
 }
 
-.pageSearch{
+.pageSearch {
     background-image: url(../../assets/about-hero-bg.jpg);
     height: auto;
     width: auto;
@@ -30,7 +30,7 @@
     flex-direction: column;
     margin-top: 0px;
     background: #18326B;
-    height: 600px;
+    height: 500px;
     border-radius: 14px;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
@@ -46,7 +46,6 @@
     margin-bottom: 30px;
     font-weight: 600;
     margin-left: 20%;
-
 }
 
 /*BOX DA #/DATE/HOUR*/
@@ -60,20 +59,19 @@
     -webkit-backdrop-filter: blur(30px);
     height: 80px;
     margin: auto;
-
     color: #72EFDB;
     margin-bottom: 10px;
     font-family: 'Rubik';
     padding-left: 34.1px;
     font-weight: 600;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Listas das Hastags */
 ul {
     list-style: none;
     padding-left: 34.1px;
-
 }
 
 .Line {
@@ -90,17 +88,15 @@ ul {
     justify-content: space-between;
     margin-top: 10px;
     font: -webkit-mini-control;
-
     color: #FFFFFF;
     font: 'Montserrat,Regular';
     padding-top: 5px;
     height: 20px;
-
 }
-.hashTagColumn{
+
+.hashTagColumn {
     padding-top: 10px;
 }
-
 
 .dateColumn {
     width: 57px;
@@ -108,7 +104,6 @@ ul {
     display: flex;
     color: #72EFDB;
     padding-top: 10px;
-
 }
 
 .dateColumns {
@@ -116,20 +111,16 @@ ul {
     padding-left: 60%;
     display: flex;
     color: #72EFDB;
-    padding-top: 10px;
-
 }
+
 .hourColumn {
     padding-top: 10px;
     display: flex;
     margin-right: 60px;
     color: #72EFDB;
-
-
 }
 
 .hourColumns {
-    padding-top: 10px;
     display: flex;
     margin-right: 20px;
     color: #72EFDB;
@@ -143,7 +134,7 @@ ul {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        flex-direction: column;   
+        flex-direction: column;
     }
 
     .dateColumn {
@@ -184,28 +175,20 @@ ul {
         margin-right: 20px;
         color: #72EFDB;
         padding-left: 25px;
-
     }
 
     .HeaderTable {
-
         padding: 0;
     }
 
     .hashTagColumn {
         margin-bottom: 20px;
-
         margin-left: 30px;
-
     }
 }
 
 /* Para modelos mobile */
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {}
 
-}
-
-@media screen and (max-width: 395px) {
-
-}
+@media screen and (max-width: 395px) {}
