@@ -1,19 +1,18 @@
-.headerTop{
+.headerTop {
   display: flex;
   align-items: center;
   padding: 1% 0% 1% 0%;
   background-color: #0A1744;
 }
 
-.headerLogo{
+.headerLogo {
   width: 75%;
 }
 
-.headerBtn{
+.headerBtn {
   display: flex;
 }
 
-.headerLink{
+.headerLink {
   text-decoration: none;
 }
-

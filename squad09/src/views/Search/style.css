@@ -1,0 +1,194 @@
+*body {
+    background-image: url(../../assets/about-hero-bg.jpg);
+    height: auto;
+    width: 100%;
+    display: flex;
+    left: 0;
+}
+
+/* Layout Properties */
+.ListMain {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 1081px;
+    flex-direction: column;
+    background-image: url('../../assets/table-bg.jpg');
+}
+
+.pageSearch {
+    background-image: url(../../assets/about-hero-bg.jpg);
+    height: auto;
+    width: auto;
+}
+
+/* BOX DA LISTA DE BUSCA */
+.ListTable {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-direction: column;
+    margin-top: 0px;
+    background: #18326B;
+    height: 500px;
+    border-radius: 14px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    opacity: 1;
+}
+
+/* Titulo busca realizadas */
+.ListTitle {
+    color: #72EFDB;
+    font-size: 30px;
+    font-family: 'Rubik';
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin-left: 20%;
+}
+
+/*BOX DA #/DATE/HOUR*/
+.HeaderTable {
+    display: flex;
+    padding-top: 10px;
+    background: #000F63;
+    border-radius: 14px;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    height: 80px;
+    margin: auto;
+    color: #72EFDB;
+    margin-bottom: 10px;
+    font-family: 'Rubik';
+    padding-left: 34.1px;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Listas das Hastags */
+ul {
+    list-style: none;
+    padding-left: 34.1px;
+}
+
+.Line {
+    border: 0.1px solid #41558E;
+    margin-left: 23.8px;
+    margin-right: 23.8px;
+}
+
+.ListHastags {
+    display: flex;
+    margin-left: 3px;
+    margin-right: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    font: -webkit-mini-control;
+    color: #FFFFFF;
+    font: 'Montserrat,Regular';
+    padding-top: 5px;
+    height: 20px;
+}
+
+.hashTagColumn {
+    padding-top: 10px;
+}
+
+.dateColumn {
+    width: 57px;
+    padding-left: 60%;
+    display: flex;
+    color: #72EFDB;
+    padding-top: 10px;
+}
+
+.dateColumns {
+    width: 57px;
+    padding-left: 60%;
+    display: flex;
+    color: #72EFDB;
+}
+
+.hourColumn {
+    padding-top: 10px;
+    display: flex;
+    margin-right: 60px;
+    color: #72EFDB;
+}
+
+.hourColumns {
+    display: flex;
+    margin-right: 20px;
+    color: #72EFDB;
+}
+
+/* Para modelos tablets */
+
+@media screen and (max-width: 900px) {
+
+    .ListTable {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .dateColumn {
+        width: 57px;
+        padding-left: 50%;
+        margin-right: 7px;
+        display: flex;
+    }
+
+    .hourColumn {
+        display: flex;
+        margin-right: 60px;
+        margin-left: 20px;
+    }
+
+    .dateColumns {
+        width: 57px;
+        padding-left: 50%;
+        margin-right: 7px;
+        display: flex;
+        color: #72EFDB;
+        padding-top: 5px;
+    }
+
+    .hourColumns {
+        padding-top: 5px;
+        display: flex;
+        margin-right: 20px;
+        color: #72EFDB;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .hourColumns {
+        padding-top: 5px;
+        display: flex;
+        margin-right: 20px;
+        color: #72EFDB;
+        padding-left: 25px;
+    }
+
+    .HeaderTable {
+        padding: 0;
+    }
+
+    .hashTagColumn {
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+}
+
+/* Para modelos mobile */
+
+@media screen and (max-width: 560px) {}
+
+@media screen and (max-width: 395px) {}

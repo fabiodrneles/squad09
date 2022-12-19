@@ -29,7 +29,7 @@ function Header(props){
                 boxShadow: '0px 3px 6px var(--collor-button-dark)',
                 border: 'none',
               }
-                         
+         
             }>
             <img src={item.icon} alt={item.icon} 
               style={

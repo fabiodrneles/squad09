@@ -1,9 +1,7 @@
 import React from 'react';
 import './style.css';
-//import { FaHome } from 'react-icons/fa';
-//import { CgLogOff } from 'react-icons/cg';
 import HomeIcon from '../../assets/icon-home.svg';
-import OffIcon from '../../assets/icon-power-off.svg'
+import OffIcon from '../../assets/icon-power-off.svg';
 import Header from "../../components/Header";
 
 function SeachComponent() {
@@ -27,7 +25,6 @@ function SeachComponent() {
         <header className='pageSearch'>
             <div className='ListMain ,mobile'>
                 <Header buttons={buttonStyles} />
-
 
                 {/* <div className='header' >
                     <p className='hastag'>hashtag<span className='Find'>finder</span></p>
