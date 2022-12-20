@@ -1,13 +1,9 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import './style.css';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PhotoAndIconAboutUs from "../../components/PhotoAndIconAboutUs";
 import IconIlustration from '../../assets/about-ilustration.svg';
-import IconMarcia from '../../assets/marcia.jpeg';
-import IconDaniel from '../../assets/daniel.jpeg';
-import IconFabio from '../../assets/fabio.jpeg';
-import IconLeidy from '../../assets/leidy.jpeg';
 import IconGithub from '../../assets/icon-github.svg';
 import IconEnvelope from '../../assets/icon-envelope.svg';
 import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
@@ -15,6 +11,8 @@ import IconHome from '../../assets/icon-home.svg';
 import IconLogin from '../../assets/icon-user-alt.svg';
 
 function About(){
+  const [aboutProject, setAboutProject] = useState();
+  const [aboutUs, setAboutUs] = useState([]);
   const buttonStyles =[
     {
       title: "HOME",
@@ -31,52 +29,78 @@ function About(){
       backgroundColor: "#1E3E7B",
     },
   ]
-  const aboutUs= [
-    {
-      name: 'Daniel Oliveira',
-      about: 'Desenvolvedor Front End HTML5 | CSS | JAVASCRIPT | REACT.JS ',
-      img: IconDaniel,
-      email: 'nogueira.dan07@gmail.com',
-      github: 'https://github.com/DanielNogueiraOliveira',
-      linkedin: 'https://www.linkedin.com/in/daniel-nogueira-6ba2711b0/',
-      iconGithub: IconGithub,
-      iconEmail: IconEnvelope,
-      iconLinkedin: IconLinkedin,
-    },
-    {
-      name: 'Fabio Dorneles',
-      about: 'Desenvolvedor Full Stack REACT.JS | SPRING | ANDROID | JAVA | COBOL ',
-      img: IconFabio,
-      email: 'fabiodrneles@gmail.com',
-      github: 'https://github.com/fabiodrneles',
-      linkedin: 'https://www.linkedin.com/in/fabiodrneles/',
-      iconGithub: IconGithub,
-      iconEmail: IconEnvelope,
-      iconLinkedin: IconLinkedin,
-    },
-    {
-      name: 'Leidy Olinto',
-      about: 'Desenvolvedora Front End   HTML | GIT | CSS | JAVASCRIPT| REACT.JS ',
-      img: IconLeidy,
-      email:'suverleide.olinto@gmail.com',
-      github: 'https://github.com/LeidyOlinto',
-      linkedin: 'https://www.linkedin.com/in/leidy-olinto-356b9391/',
-      iconGithub: IconGithub,
-      iconEmail: IconEnvelope,
-      iconLinkedin: IconLinkedin,
-    },
-    {
-      name: 'Marcia Oliveira',
-      about: 'Desenvolvedora Front End HTML | CSS | JAVASCRIPT | VUE.JS | REACT.JS',
-      img: IconMarcia,
-      email: 'bmg.olivier@gmail.com',
-      github: 'https://github.com/marciadeoliveira',
-      linkedin: 'https://www.linkedin.com/in/marcia-b-oliveira/',
-      iconGithub: IconGithub,
-      iconEmail: IconEnvelope,
-      iconLinkedin: IconLinkedin,
-    },
-  ]
+  useEffect(() => {
+    fetch('https://api.airtable.com/v0/app6wQWfM6eJngkD4/Projeto?filterByFormula=Find(%2209-22%22%2C+Squad)',
+      {
+        method: "GET",
+        headers: {
+        Authorization:'Bearer keyz8BAZKCTGY5dB1',
+        },
+      }
+    )
+    .then(function (res) { return res.json(); })
+    .then(function (data) { 
+      setAboutProject(data.records[0].fields.Sobre)
+    })
+    .catch((erro) => console.log(erro));
+
+    fetch('https://api.airtable.com/v0/app6wQWfM6eJngkD4/Equipe?filterByFormula=Find(%2209-22%22%2C+Squad)', 
+      { 
+        method: "GET", 
+        headers: { 
+          "Authorization": `Bearer keyz8BAZKCTGY5dB1`, 
+        } 
+      })
+      .then(function (res) { return res.json(); })
+      .then(function (data) { 
+        console.log(data.records, 'new')
+        setAboutUs([
+          {
+            name: data.records[3].fields.Nome,
+            about: data.records[3].fields.Descrição,
+            img: data.records[3].fields.Imagem[0].url,
+            email: data.records[3].fields.Email,
+            github: data.records[3].fields.Github,
+            linkedin: data.records[3].fields.Linkedin,
+            iconGithub: IconGithub,
+            iconEmail: IconEnvelope,
+            iconLinkedin: IconLinkedin,
+          },
+          {
+            name: data.records[1].fields.Nome,
+            about: data.records[1].fields.Descrição,
+            img: data.records[1].fields.Imagem[0].url,
+            email: data.records[1].fields.Email,
+            github: data.records[1].fields.Github,
+            linkedin: data.records[1].fields.Linkedin,
+            iconGithub: IconGithub,
+            iconEmail: IconEnvelope,
+            iconLinkedin: IconLinkedin,
+          }, {
+            name: data.records[0].fields.Nome,
+            about: data.records[0].fields.Descrição,
+            img: data.records[0].fields.Imagem[0].url,
+            email: data.records[0].fields.Email,
+            github: data.records[0].fields.Github,
+            linkedin: data.records[0].fields.Linkedin,
+            iconGithub: IconGithub,
+            iconEmail: IconEnvelope,
+            iconLinkedin: IconLinkedin,
+          }, {
+            name: data.records[2].fields.Nome,
+            about: data.records[2].fields.Descrição,
+            img: data.records[2].fields.Imagem[0].url,
+            email: data.records[2].fields.Email,
+            github: data.records[2].fields.Github,
+            linkedin: data.records[2].fields.Linkedin,
+            iconGithub: IconGithub,
+            iconEmail: IconEnvelope,
+            iconLinkedin: IconLinkedin,
+          },
+        ])
+        //setTeam(data.records[0].fields.Sobre)
+      })
+    },[])
   return(
     <>
     <div className="containerAbout">
@@ -87,16 +111,7 @@ function About(){
             <h1>Sobre o projeto</h1>
           </div>
           <div className="projectText">
-            <p>
-              Certamente, você já encontrou a palavra engajamento em diferentes contextos, 
-              e nós alunos da NewTab Academy estamos engajados em te proporcionar ferramentas 
-              que otimizem suas buscas de maneira assertiva.
-            </p>
-            <p>
-              Aqui no hashtagfinder, você acessa de forma rápida e simples as hashs mais comentadas do Twitter, 
-              garantindo assim maior interação em suas postagens, além de monitorar o crescimento de suas próprias 
-              hashes personalizadas e te deixar por dentro das maiores novidades, e tudo isso de forma gratuita.
-            </p>
+            <p>{aboutProject}</p>
           </div>
         </div>
         <div className="aboutIlustration">

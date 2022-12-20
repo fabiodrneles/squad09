@@ -11,7 +11,7 @@ function Header(props){
         </Link>
       </div>
       {
-        props.buttons.map( (item,index) =>  <div className='headerBtn'>
+        props.buttons.map( (item,index) =>  <div className='headerBtn' key={index}>
         <Link key={item.route} to={item.route} className="headerLink"
         >
           <button className={item.title.toLowerCase()} 
