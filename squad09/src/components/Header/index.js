@@ -10,7 +10,8 @@ function Header(props){
           <img src= { Logo } alt= "logo"/>
         </Link>
       </div>
-      {
+      <div className='headerNav'>      
+        {
         props.buttons.map( (item,index) =>  <div className='headerBtn' key={index}>
         <Link key={item.route} to={item.route} className="headerLink"
         >
@@ -18,16 +19,16 @@ function Header(props){
             style={
               {
                 background: item.backgroundColor,
-                width: '140px',
-                height: '49px',
+                width: '100%',
+                height: '100%',
                 color: item.textColor,
                 display: "flex",  
                 borderRadius: '25px',
                 justifyContent: 'center',
-                marginRight:'10px',
                 alignItems: 'center',
                 boxShadow: '0px 3px 6px var(--collor-button-dark)',
                 border: 'none',
+                margin:0,
               }
          
             }>
@@ -45,6 +46,8 @@ function Header(props){
         </Link>
         </div>
       )}
+      </div>
+
     </div>
   )
 }

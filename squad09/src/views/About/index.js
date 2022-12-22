@@ -104,6 +104,9 @@ function About(){
   return(
     <>
     <div className="containerAbout">
+      {
+        
+      }
       <Header buttons={buttonStyles}/> 
       <div className="about">
         <div className="aboutProject">
