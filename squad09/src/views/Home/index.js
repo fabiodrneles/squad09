@@ -37,29 +37,18 @@ function Home() {
 
             <Header buttons={buttonStyles} />
             {/*<Context /> */}
-//TODO EDITAR A ESCRITA
-//TODO EDITAR AS classNaME DE ACORDO COM A VIEWS lOGIN
-            <div className="about">
+            <div className="container">
                 <div className="aboutProject">
-                    <div className="aboutProjectTitle">
-                        <h1>Sobre o projeto</h1>
+                    <div className="boxTextTitle">
+                        <h1>Encontre hashtags de maneira fácil.</h1>
                     </div>
-                    <div className="projectText">
+                    <div className="boxTextSubtitles">
                         <p>
-                            Certamente, você já encontrou a palavra engajamento em diferentes contextos,
-                            e nós alunos da NewTab Academy estamos engajados em te proporcionar ferramentas
-                            que otimizem suas buscas de maneira assertiva.
-                        </p>
-                        <p>
-                            Aqui no hashtagfinder, você acessa de forma rápida e simples as hashs mais comentadas do Twitter,
-                            garantindo assim maior interação em suas postagens, além de monitorar o crescimento de suas próprias
-                            hashes personalizadas e te deixar por dentro das maiores novidades, e tudo isso de forma gratuita.
+                            Digite o que deseja no campo de buscas e confira os resultados do Twitter abaixo
                         </p>
                     </div>
                 </div>
-                <div className="aboutIlustration">
-                    <img src={IconIlustration} alt="ilustração" className="IlustrationImage" />
-                </div>
+
             </div>
 
             <Footer />
