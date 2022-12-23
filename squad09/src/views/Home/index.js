@@ -4,9 +4,6 @@ import Footer from "../../components/Footer";
 import IconLogin from '../../assets/icon-user-alt.svg'
 import IconInfo from '../../assets/icon-info-circle.svg';
 import Header from "../../components/Header";
-// IMPORT DA IMAGEM 
-// TODO FAZER A TROCA DE IMAGEM NO FUNDO DA PAGINA
-import IconIlustration from '../../assets/about-ilustration.svg';
 
 import "./style.css";
 
@@ -38,7 +35,7 @@ function Home() {
             <Header buttons={buttonStyles} />
             {/*<Context /> */}
             <div className="container">
-                <div className="aboutProject">
+                <div className="boxTitles">
                     <div className="boxTextTitle">
                         <h1>Encontre hashtags de maneira fácil.</h1>
                     </div>

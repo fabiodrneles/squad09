@@ -15,7 +15,7 @@
     width: 804px;
     height: 188px;
     text-align: left;
-    font: normal normal bold 42px/60px Rubik;
+    font: normal normal bold 32px/60px Rubik;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -27,8 +27,14 @@
     width: 608px;
     height: 74px;
     text-align: left;
-    font: normal normal normal 24px/27px Rubik;
-    letter-spacing: 0px;
+    font: normal normal normal 28px/26px Rubik;
+    letter-spacing: px;
     color: #FFFFFF;
+    opacity: 1;
+}
+
+.boxTitles {
+    padding-top: 150px;
+    padding-left: 80px;
     opacity: 1;
 }
