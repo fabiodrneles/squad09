@@ -43,7 +43,7 @@
   margin-top: 3%;
 }
 .aboutTitle{
-  width: 82%;
+  width: 87%;
   margin-bottom: 2%;
 }
 .aboutUsBox{
@@ -51,6 +51,7 @@
   justify-content: center;
   align-items: center;
   width: 90%;
+  margin-top: 2%;
 }
 @media screen and (max-width:1112px) {
   .containerAbout{
@@ -58,10 +59,6 @@
   }
   .about{
     margin-top: 5%;
-  }
-  .aboutBox{
-    font-size: .9rem;
-    padding-bottom: 0;
   }
 }
 @media screen and (max-width:768px) {
@@ -72,9 +69,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .aboutProject{
+    align-items: center;
+  
     width: 100%;
   }
   .aboutIlustration{
@@ -86,18 +84,53 @@
     flex-direction: column;
     margin-top: 3%;
   }
-  .aboutBox{
-    max-width: 35%;
-    height: 350px;
-    font-size: 1rem;
-    margin-top: 3%;
-  }
-  .aboutBoxIcon{
-    margin-bottom: 3%;
-  }
 } 
 @media screen and (max-width:562px) {
+  .containerAbout{
+    max-width: 562px;
+  }
   .about{
-    margin-top: 8%;
+   width: 90%;
+  }
+  .aboutProject{
+    width: 100%;
+  }
+  .aboutTitle{
+   margin-top: 10%;
+   margin-bottom: 5%;
+  }
+  .aboutUsBox{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width:412px) {
+  .containerAbout{
+    max-width: 412px;
+  }
+  .about{
+   width: 90%;
+  }
+  .aboutProject{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .aboutUs{
+    margin-top: 10%;
+  }
+  .aboutTitle{
+   margin-top: 20%;
+   margin-bottom: 10%;
+   text-align: center;
+   font-size: .9rem;
+  }
+  .aboutUsBox{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
   }
 }

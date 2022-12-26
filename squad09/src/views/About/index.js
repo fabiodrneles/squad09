@@ -1,7 +1,6 @@
 import React, {useEffect,useState} from "react";
 import './style.css';
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import PhotoAndIconAboutUs from "../../components/PhotoAndIconAboutUs";
 import IconIlustration from '../../assets/about-ilustration.svg';
 import IconGithub from '../../assets/icon-github.svg';
@@ -9,6 +8,9 @@ import IconEnvelope from '../../assets/icon-envelope.svg';
 import IconLinkedin from '../../assets/icon-awesome-linkedin.svg';
 import IconHome from '../../assets/icon-home.svg';
 import IconLogin from '../../assets/icon-user-alt.svg';
+import Footer from "../../components/Footer";
+
+
 
 function About(){
   const [aboutProject, setAboutProject] = useState();
@@ -102,11 +104,7 @@ function About(){
       })
     },[])
   return(
-    <>
     <div className="containerAbout">
-      {
-        
-      }
       <Header buttons={buttonStyles}/> 
       <div className="about">
         <div className="aboutProject">
@@ -131,7 +129,6 @@ function About(){
       </div>
       <Footer/>
     </div>
-    </>
   )
 }
 export default About;
