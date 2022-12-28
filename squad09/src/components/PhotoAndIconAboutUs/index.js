@@ -14,10 +14,10 @@ function PhotoAndIconAboutUs(props){
             <img src= {item.iconGithub} alt= "github" className="iconImage"/>
           </a>
           <a href={item.email} target="_blank" rel="noopener noreferrer">
-            <img src= {item.iconEmail} alt= "github" className="iconImage"/>
+            <img src= {item.iconEmail} alt= "email" className="iconImage"/>
           </a>
           <a href={item.linkedin} target="_blank" rel="noopener noreferrer">
-            <img src= {item.iconLinkedin} alt= "github" className="iconImage"/>
+            <img src= {item.iconLinkedin} alt= "linkedin" className="iconImage"/>
           </a>
         </div>
       </div>
