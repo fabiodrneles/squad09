@@ -10,8 +10,6 @@ import IconHome from '../../assets/icon-home.svg';
 import IconLogin from '../../assets/icon-user-alt.svg';
 import Footer from "../../components/Footer";
 
-
-
 function About(){
   const [aboutProject, setAboutProject] = useState();
   const [aboutUs, setAboutUs] = useState([]);
@@ -55,7 +53,7 @@ function About(){
       })
       .then(function (res) { return res.json(); })
       .then(function (data) { 
-        console.log(data.records, 'new')
+        console.log(data.records[3].fields, 'linkedin')
         setAboutUs([
           {
             name: data.records[3].fields.Nome,
@@ -63,7 +61,7 @@ function About(){
             img: data.records[3].fields.Imagem[0].url,
             email: data.records[3].fields.Email,
             github: data.records[3].fields.Github,
-            linkedin: data.records[3].fields.Linkedin,
+            linkedin: data.records[3].fields.LinkedIn,
             iconGithub: IconGithub,
             iconEmail: IconEnvelope,
             iconLinkedin: IconLinkedin,
@@ -74,33 +72,34 @@ function About(){
             img: data.records[1].fields.Imagem[0].url,
             email: data.records[1].fields.Email,
             github: data.records[1].fields.Github,
-            linkedin: data.records[1].fields.Linkedin,
+            linkedin: data.records[1].fields.LinkedIn,
             iconGithub: IconGithub,
             iconEmail: IconEnvelope,
             iconLinkedin: IconLinkedin,
-          }, {
+          }, 
+          {
             name: data.records[0].fields.Nome,
             about: data.records[0].fields.Descrição,
             img: data.records[0].fields.Imagem[0].url,
             email: data.records[0].fields.Email,
             github: data.records[0].fields.Github,
-            linkedin: data.records[0].fields.Linkedin,
+            linkedin: data.records[0].fields.LinkedIn,
             iconGithub: IconGithub,
             iconEmail: IconEnvelope,
             iconLinkedin: IconLinkedin,
-          }, {
+          }, 
+          {
             name: data.records[2].fields.Nome,
             about: data.records[2].fields.Descrição,
             img: data.records[2].fields.Imagem[0].url,
             email: data.records[2].fields.Email,
             github: data.records[2].fields.Github,
-            linkedin: data.records[2].fields.Linkedin,
+            linkedin: data.records[2].fields.LinkedIn,
             iconGithub: IconGithub,
             iconEmail: IconEnvelope,
             iconLinkedin: IconLinkedin,
           },
         ])
-        //setTeam(data.records[0].fields.Sobre)
       })
     },[])
   return(
