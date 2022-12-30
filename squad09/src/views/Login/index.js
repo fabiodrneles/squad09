@@ -1,31 +1,41 @@
 import './style.css';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import IconHome from '../../assets/icon-home.svg'
 import Header from "../../components/App/header/header";
-import { validateEmail, validatePassword } from '../../components/App/validation/validation'
+import { useAuth } from "../../validate/auth";
+import { useNavigate } from 'react-router-dom';
 
 
 function Login() {
   const [email, SetEmail] = useState("")
   const [password, SetPassword] = useState("")
-  const [emailErr, SetEmailErr] = useState(false)
-  const [passwordErr, SetPasswordErr] = useState(false)
-
+  const auth = useAuth();
+  const navigate = useNavigate();
 
   //validação de email
-  const validate = () => {
-    if (!validateEmail.test(email)) {
-      SetEmailErr(true)
-    } else {
-      SetEmailErr(false)
-    }
-
-    if (!validatePassword.test(password)) {
-      SetPasswordErr(true)
-    } else {
-      SetPasswordErr(false)
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch(
+      'https://api.airtable.com/v0/app6wQWfM6eJngkD4/Login?maxRecords=8&view=Grid%20view&filterByFormula={Squad}=09/22',
+       {
+        method: 'GET',
+        headers: {
+          Authorization: 'Bearer key2CwkHb0CKumjuM',
+        },
+      },
+    ).then((response) => response.json())
+        .then(function (database) {
+          database.records.map((data)=>{
+          if(data.fields.Email === email && data.fields.Senha === password){
+            auth.login(true);
+            navigate('/search', {replace: true});
+          }
+          return null
+        })
+        document.getElementById('messageError').innerHTML = 'Atenção! Seus dados são inválidos!'
+      })
   }
+
 
   // personalização do header 
   const buttonStyles = [
@@ -38,48 +48,23 @@ function Login() {
     },]
 
 
-  /* useEffect(() => {
-       //function that retrieves users with priviliges
-       if(props.signed){
-         navigate("/list");
-         return;
-       }
-       async function getList() {
-   
-         const requestOptions = {
-           method: "GET",
-           headers: {
-             authorization: "Bearer key2CwkHb0CKumjuM",
-             "Content-Type": "application/json",
-           },
-   
-         };
-   
-         const response = await fetch(APIGET, requestOptions);
-         const data = await response.json();
-         setUsersList(data.records);
-   
-       }
-       getList();
-     }, [props.signed,  navigate])*/
-
+ 
   return (
     <div className="container">
       <Header buttons={buttonStyles} />
 
       <div className="container-login">
         <div className="wrap-login">
-          <form className="form-login">
+          <form onSubmit={handleSubmit} className="form-login">
             <spam className="text-login"> Login</spam>
 
             <div className="Wrap-input">
               <input className="input"
                 type="text"
                 placeholder="Usuario"
-                value={email}
-                onBlur={(e) => SetEmail(e.target.value)}
+                onChange={(e) => SetEmail(e.target.value)}
+                required
               />
-              {emailErr && <p>Por favor digete um email valido!</p>}
 
             </div>
 
@@ -88,14 +73,14 @@ function Login() {
                 className="input"
                 type="password"
                 placeholder='senha'
-                value={password}
-                onBlur={(e) => SetPassword(e.target.value)}
+                onChange={(e) => SetPassword(e.target.value)}
+                required
               />
-              {passwordErr && <p>Por favor digete um senha valida!</p>}
             </div>
 
             <div className="container-button">
               <button className="button-send">ACESSAR</button>
+              <span className="Error" id="messageError"></span>
             </div>
 
           </form>
