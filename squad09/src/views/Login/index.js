@@ -2,7 +2,7 @@ import './style.css';
 import { useState } from "react";
 import IconHome from '../../assets/icon-home.svg'
 import Header from "../../components/App/header/header";
-import { useAuth } from "../../validate/auth";
+import { useAuth } from "../../components/App/validate/auth";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -15,18 +15,17 @@ function Login() {
   //validação de email
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(
-      'https://api.airtable.com/v0/app6wQWfM6eJngkD4/Login?maxRecords=8&view=Grid%20view&filterByFormula={Squad}=09/22',
-       {
-        method: 'GET',
+    fetch('https://api.airtable.com/v0/app6wQWfM6eJngkD4/Projeto?filterByFormula=Find(%2209-22%22%2C+Squad)',
+      {
+        method: "GET",
         headers: {
-          Authorization: 'Bearer key2CwkHb0CKumjuM',
+        Authorization:'Bearer keyz8BAZKCTGY5dB1',
         },
       },
     ).then((response) => response.json())
         .then(function (database) {
           database.records.map((data)=>{
-          if(data.fields.Email === email && data.fields.Senha === password){
+          if(data.fields.email === email && data.fields.Senha === password){
             auth.login(true);
             navigate('/search', {replace: true});
           }
@@ -60,7 +59,7 @@ function Login() {
 
             <div className="Wrap-input">
               <input className="input"
-                type="text"
+                type="email"
                 placeholder="Usuario"
                 onChange={(e) => SetEmail(e.target.value)}
                 required
@@ -79,7 +78,7 @@ function Login() {
             </div>
 
             <div className="container-button">
-              <button className="button-send">ACESSAR</button>
+              <button type="subimt" className="button-send">ACESSAR</button>
               <span className="Error" id="messageError"></span>
             </div>
 

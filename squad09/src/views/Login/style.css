@@ -95,7 +95,9 @@ body {
     cursor: pointer;
 }
 
-
+.Error{
+    color: #ff0000 ;
+}
 
 @media screen and (max-width: 415px) {
 
