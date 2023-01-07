@@ -9,7 +9,7 @@ export  const AuthProvider = ({ children }) =>{
 
 
 	const login  = (isLogged) => {
-		localStorage.setItem('Login', true);
+		localStorage.setItem('login', true);
 		setIsLogged(isLogged);
 	}
 	const logout = () => {

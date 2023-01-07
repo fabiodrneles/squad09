@@ -2,7 +2,7 @@ import './style.css';
 import Header from "../../components/Header/index";
 import IconHome from '../../assets/icon-home.svg';
 import { useState } from 'react';
-import { useAuth } from "../../components/validate/auth";
+import { useAuth } from "../../components/api/auth";
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
@@ -14,11 +14,12 @@ function Login() {
   //validação de email
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://api.airtable.com/v0/app6wQWfM6eJngkD4/Login?maxRecords=8&view=Grid%20view&filterByFormula={Squad}=09/22',
+    fetch(
+      'https://api.airtable.com/v0/app6wQWfM6eJngkD4/Login?maxRecords=8&view=Grid%20view&filterByFormula={Squad}=09-22',
       {
         method: "GET",
         headers: {
-        Authorization:'Bearer keyz8BAZKCTGY5dB1',
+        Authorization:'Bearer keymkBEBt2FCf4w3w',
         },
       },
     ).then((response) => response.json())
@@ -26,7 +27,7 @@ function Login() {
           database.records.map((data)=>{
           if(data.fields.email === email && data.fields.Senha === password){
             auth.login(true);
-            navigate('/earch', {replace: true});
+            navigate('/search', {replace: true});
           }
           return null
         })
