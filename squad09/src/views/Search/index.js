@@ -31,7 +31,7 @@ function Seach() {
     useEffect(() => {
     fetch("https://api.airtable.com/v0/app6wQWfM6eJngkD4/buscas?filterByFormula=({Squad} = '09-22')", {
         headers: {
-            Authorization: "Bearer keyz8BAZKCTGY5dB1"
+            Authorization: "Bearer keymkBEBt2FCf4w3w"
         }
     })
       .then(response => response.json())
@@ -42,7 +42,7 @@ function Seach() {
       { 
         method: "GET", 
         headers: { 
-          "Authorization": `Bearer keyz8BAZKCTGY5dB1`, 
+          "Authorization": `Bearer keymkBEBt2FCf4w3w`, 
         } 
       })
       .then(function (res) { return res.json(); })
