@@ -2,34 +2,33 @@ import './style.css';
 import Header from "../../components/Header/index";
 import IconHome from '../../assets/icon-home.svg';
 import { useState } from 'react';
-import { useAuth } from "../../components/validate/auth";
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [email, SetEmail] = useState("")
   const [password, SetPassword] = useState("")
-  const auth = useAuth();
   const navigate = useNavigate();
 
   //validação de email
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://api.airtable.com/v0/app6wQWfM6eJngkD4/Login?maxRecords=8&view=Grid%20view&filterByFormula={Squad}=09/22',
+    fetch(
+      'https://api.airtable.com/v0/app6wQWfM6eJngkD4/Login?filterByFormula=Find(%2209-22%22%2C+Squad)',
       {
         method: "GET",
         headers: {
-        Authorization:'Bearer keyz8BAZKCTGY5dB1',
+        Authorization:'Bearer keymkBEBt2FCf4w3w',
         },
       },
-    ).then((response) => response.json())
-        .then(function (database) {
-          database.records.map((data)=>{
-          if(data.fields.email === email && data.fields.Senha === password){
-            auth.login(true);
-            navigate('/earch', {replace: true});
-          }
-          return null
-        })
+    )
+    .then((response) =>  {return response.json()})
+    .then(function (data) {
+      const dataEmail = data.records[0].fields.Email
+      const dataPassword = data.records[0].fields.Senha
+        if(dataEmail === email && dataPassword === password){
+          navigate('/search', {replace: true});
+          localStorage.clear()
+        }
         document.getElementById('messageError').innerHTML = 'Atenção! Seus dados são inválidos!'
       })
   }
